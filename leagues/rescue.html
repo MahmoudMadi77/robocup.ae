@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboCupRescue - RoboCup UAE</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>RoboCup Rescue - RoboCup UAE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -13,228 +14,243 @@
             <div class="nav-logo">
                 <a href="../index.html">RoboCup UAE</a>
             </div>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../about/history.html">History</a>
-                        <a href="../about/objective.html">Objective</a>
-                        <a href="../about/past-events.html">Past Events</a>
+                        <a href="../pages/history.html">History</a>
+                        <a href="../pages/objective.html">Objective</a>
+                        <a href="../pages/past-events.html">Past Events</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../organization/organization.html">Structure</a>
-                        <a href="../organization/trustees.html">Trustees</a>
-                        <a href="../organization/committees.html">Committees</a>
-                        <a href="../organization/regional.html">Regional Partners</a>
+                        <a href="../pages/trustees.html">Trustees</a>
+                        <a href="../pages/committees.html">Committees</a>
+                        <a href="../pages/regional.html">Regional Partners</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/leagues.html" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../leagues/leagues.html">Overview</a>
-                        <a href="soccer.html">RoboCupSoccer</a>
-                        <a href="rescue.html" class="active">RoboCupRescue</a>
+                        <a href="soccer.html">RoboCup Soccer</a>
+                        <a href="rescue.html">RoboCup Rescue</a>
                         <a href="home.html">RoboCup@Home</a>
-                        <a href="industrial.html">RoboCupIndustrial</a>
-                        <a href="junior.html">RoboCupJunior</a>
+                        <a href="industrial.html">RoboCup Industrial</a>
+                        <a href="junior.html">RoboCup Junior</a>
                     </div>
-                </div>
-                <a href="../events/events.html" class="nav-link">Events</a>
-                <a href="../news/news.html" class="nav-link">News</a>
-                <a href="../research/research.html" class="nav-link">Research</a>
-                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
-                <a href="../contact/contact.html" class="nav-link">Contact</a>
-            </div>
+                </li>
+                <li class="nav-item"><a href="../pages/events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="../pages/news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="../pages/research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../pages/gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero-section" style="background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>RoboCupRescue</h1>
-                    <p>Developing robotic solutions for search and rescue operations in disaster scenarios</p>
-                </div>
+    <main class="main-content">
+        <section class="hero-section league-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">RoboCup Rescue</h1>
+                <p class="hero-subtitle">Developing robots for disaster response and emergency situations</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="league-overview">
-                    <div class="league-intro">
-                        <h2>About RoboCupRescue</h2>
-                        <p>RoboCupRescue focuses on developing robotic systems for search and rescue operations in disaster scenarios. This league addresses real-world challenges in emergency response, combining robotics, AI, and multi-agent coordination to save lives.</p>
+                    <div class="overview-text">
+                        <h2>About RoboCup Rescue</h2>
+                        <p>RoboCup Rescue focuses on developing robotic systems for search and rescue operations in disaster scenarios. The league aims to promote research and development of robotic systems that can assist in real-world emergency situations, from urban search and rescue to disaster response coordination.</p>
                     </div>
-
-                    <div class="league-categories">
-                        <h3>Competition Categories</h3>
-                        <div class="categories-grid">
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <h4>Robot League</h4>
-                                <p>Physical robots navigate through disaster scenarios to locate and assist victims.</p>
-                                <ul>
-                                    <li>Autonomous navigation</li>
-                                    <li>Victim detection and mapping</li>
-                                    <li>Debris manipulation</li>
-                                    <li>Multi-robot coordination</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-desktop"></i>
-                                </div>
-                                <h4>Simulation League</h4>
-                                <p>Large-scale disaster simulation with virtual agents coordinating rescue operations.</p>
-                                <ul>
-                                    <li>City-wide disaster scenarios</li>
-                                    <li>Fire brigade coordination</li>
-                                    <li>Police force management</li>
-                                    <li>Ambulance team optimization</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-building"></i>
-                                </div>
-                                <h4>Infrastructure League</h4>
-                                <p>Focus on communication networks and information systems during disasters.</p>
-                                <ul>
-                                    <li>Network resilience</li>
-                                    <li>Information flow optimization</li>
-                                    <li>Resource allocation</li>
-                                    <li>Decision support systems</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-plane"></i>
-                                </div>
-                                <h4>Space Robotics</h4>
-                                <p>Robotic systems for extreme environments and space-based rescue operations.</p>
-                                <ul>
-                                    <li>Extreme environment navigation</li>
-                                    <li>Remote operation capabilities</li>
-                                    <li>Autonomous decision making</li>
-                                    <li>Resource management</li>
-                                </ul>
-                            </div>
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Competition Areas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Teams Worldwide</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Countries</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="technical-challenges">
-                        <h3>Technical Challenges</h3>
-                        <div class="challenges-grid">
-                            <div class="challenge-item">
-                                <i class="fas fa-map-marked-alt"></i>
-                                <h4>SLAM & Navigation</h4>
-                                <p>Simultaneous localization and mapping in unknown, dynamic environments</p>
+                <div class="leagues-grid">
+                    <div class="league-card">
+                        <div class="league-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Robot League</h3>
+                        <p>Physical robots navigate through simulated disaster environments to locate and assist victims.</p>
+                        <ul class="league-features">
+                            <li>Autonomous navigation</li>
+                            <li>Victim detection</li>
+                            <li>Mapping and exploration</li>
+                            <li>Real-time decision making</li>
+                        </ul>
+                    </div>
+
+                    <div class="league-card">
+                        <div class="league-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Simulation League</h3>
+                        <p>Virtual agents coordinate rescue operations in large-scale disaster simulations.</p>
+                        <ul class="league-features">
+                            <li>Multi-agent coordination</li>
+                            <li>Resource allocation</li>
+                            <li>Strategic planning</li>
+                            <li>Communication protocols</li>
+                        </ul>
+                    </div>
+
+                    <div class="league-card">
+                        <div class="league-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Infrastructure League</h3>
+                        <p>Focus on communication systems and infrastructure for disaster response coordination.</p>
+                        <ul class="league-features">
+                            <li>Network resilience</li>
+                            <li>Data management</li>
+                            <li>Information systems</li>
+                            <li>Coordination platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="challenges-section">
+                    <h2>Technical Challenges</h2>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <div class="challenge-icon">
+                                <i class="fas fa-map"></i>
                             </div>
-                            <div class="challenge-item">
-                                <i class="fas fa-search"></i>
-                                <h4>Victim Detection</h4>
-                                <p>Identifying and locating victims using various sensors and AI techniques</p>
+                            <h3>SLAM & Navigation</h3>
+                            <p>Simultaneous Localization and Mapping in unknown, dynamic environments with obstacles and debris.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <div class="challenge-icon">
+                                <i class="fas fa-eye"></i>
                             </div>
-                            <div class="challenge-item">
+                            <h3>Victim Detection</h3>
+                            <p>Identifying and locating victims using various sensors including thermal imaging and audio detection.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <div class="challenge-icon">
                                 <i class="fas fa-network-wired"></i>
-                                <h4>Multi-Agent Systems</h4>
-                                <p>Coordinating multiple robots and agents in complex scenarios</p>
                             </div>
-                            <div class="challenge-item">
-                                <i class="fas fa-tools"></i>
-                                <h4>Manipulation</h4>
-                                <p>Moving debris and obstacles to access victims and clear paths</p>
+                            <h3>Communication</h3>
+                            <p>Maintaining reliable communication in challenging environments with limited infrastructure.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <div class="challenge-icon">
+                                <i class="fas fa-users"></i>
                             </div>
+                            <h3>Multi-Robot Coordination</h3>
+                            <p>Coordinating multiple robots to work together efficiently in rescue operations.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="real-world-impact">
-                        <h3>Real-World Applications</h3>
-                        <div class="impact-grid">
-                            <div class="impact-card">
+                <div class="uae-participation">
+                    <h2>UAE Participation</h2>
+                    <div class="participation-content">
+                        <div class="participation-text">
+                            <p>The UAE has shown growing interest in RoboCup Rescue, with several universities and research institutions developing rescue robotics capabilities. Given the UAE's focus on smart cities and emergency preparedness, this league aligns well with national priorities.</p>
+
+                            <h3>Active UAE Teams</h3>
+                            <ul class="team-list">
+                                <li><strong>UAEU Rescue Rangers</strong> - United Arab Emirates University</li>
+                                <li><strong>Khalifa Emergency Response</strong> - Khalifa University</li>
+                                <li><strong>AUS Disaster Tech</strong> - American University of Sharjah</li>
+                                <li><strong>Dubai Emergency Robotics</strong> - Dubai Municipality</li>
+                            </ul>
+                        </div>
+                        <div class="achievements-box">
+                            <h3>Research Focus Areas</h3>
+                            <div class="achievement-item">
                                 <i class="fas fa-fire"></i>
-                                <h4>Fire Response</h4>
-                                <p>Robots assisting firefighters in dangerous environments, providing reconnaissance and support.</p>
+                                <span>Fire Detection Systems</span>
                             </div>
-                            <div class="impact-card">
-                                <i class="fas fa-home"></i>
-                                <h4>Building Collapse</h4>
-                                <p>Search and rescue operations in collapsed structures, locating survivors efficiently.</p>
-                            </div>
-                            <div class="impact-card">
+                            <div class="achievement-item">
                                 <i class="fas fa-water"></i>
-                                <h4>Flood Response</h4>
-                                <p>Aquatic robots for water-based rescue operations and flood monitoring.</p>
+                                <span>Flood Response Robotics</span>
                             </div>
-                            <div class="impact-card">
-                                <i class="fas fa-mountain"></i>
-                                <h4>Natural Disasters</h4>
-                                <p>Response to earthquakes, landslides, and other natural catastrophes.</p>
+                            <div class="achievement-item">
+                                <i class="fas fa-building"></i>
+                                <span>Urban Search & Rescue</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="uae-participation">
-                        <h3>UAE Teams & Research</h3>
-                        <div class="achievements-grid">
-                            <div class="achievement-card">
-                                <h4>Research Institutions</h4>
-                                <ul>
-                                    <li>Khalifa University - ARIS Lab</li>
-                                    <li>American University of Sharjah</li>
-                                    <li>UAE University - Robotics Lab</li>
-                                    <li>University of Sharjah</li>
-                                    <li>Masdar Institute</li>
-                                </ul>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Key Achievements</h4>
-                                <ul>
-                                    <li>Best Mobility Award 2023</li>
-                                    <li>Innovation in Victim Detection 2022</li>
-                                    <li>Simulation League Finalist 2023</li>
-                                    <li>Best Technical Paper 2022</li>
-                                </ul>
-                            </div>
+                <div class="real-world-applications">
+                    <h2>Real-World Applications</h2>
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <h3>Emergency Response</h3>
+                            <p>Robots can be deployed in dangerous situations where human responders cannot safely operate, such as building collapses or chemical spills.</p>
+                        </div>
+                        <div class="application-card">
+                            <h3>Search Operations</h3>
+                            <p>Autonomous systems can cover large areas quickly and systematically search for missing persons in disaster zones.</p>
+                        </div>
+                        <div class="application-card">
+                            <h3>Hazard Assessment</h3>
+                            <p>Robots equipped with specialized sensors can assess environmental hazards and provide critical information to rescue teams.</p>
+                        </div>
+                        <div class="application-card">
+                            <h3>Supply Delivery</h3>
+                            <p>Autonomous vehicles can deliver medical supplies and emergency equipment to areas that are difficult to reach.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="getting-started">
-                        <h3>Getting Started</h3>
-                        <div class="getting-started-content">
-                            <div class="requirements">
-                                <h4>Requirements</h4>
-                                <ul>
-                                    <li>Robotics and AI expertise</li>
-                                    <li>Multi-disciplinary team</li>
-                                    <li>Hardware development capabilities</li>
-                                    <li>Emergency response knowledge</li>
-                                </ul>
-                            </div>
-                            <div class="resources">
-                                <h4>Resources</h4>
-                                <ul>
-                                    <li><a href="#">RoboCupRescue Rules</a></li>
-                                    <li><a href="#">Simulation Platform</a></li>
-                                    <li><a href="#">Hardware Guidelines</a></li>
-                                    <li><a href="#">Training Materials</a></li>
-                                </ul>
-                            </div>
+                <div class="getting-started">
+                    <h2>Getting Started</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Choose Your Focus</h3>
+                            <p>Decide whether to focus on robot hardware, simulation, or infrastructure development.</p>
                         </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Build Your Team</h3>
+                            <p>Assemble experts in robotics, AI, emergency management, and systems engineering.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Develop Solutions</h3>
+                            <p>Create innovative solutions for disaster response challenges using cutting-edge technology.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h3>Test & Compete</h3>
+                            <p>Validate your solutions in competition scenarios and contribute to real-world applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Join the Rescue Mission</h2>
+                    <p>Help develop the next generation of emergency response robotics</p>
+                    <div class="cta-buttons">
+                        <a href="../pages/contact.html" class="btn btn-primary">Get Involved</a>
+                        <a href="../pages/research.html" class="btn btn-secondary">Research Opportunities</a>
                     </div>
                 </div>
             </div>
@@ -242,37 +258,47 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>RoboCup UAE</h3>
-                    <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../about/history.html">About</a></li>
-                        <li><a href="../leagues/leagues.html">Leagues</a></li>
-                        <li><a href="../events/events.html">Events</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RoboCup UAE</h3>
+                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/leagues.html">Leagues</a></li>
+                    <li><a href="../pages/events.html">Events</a></li>
+                    <li><a href="../pages/news.html">News</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h4>Leagues</h4>
+                <ul>
+                    <li><a href="soccer.html">Soccer</a></li>
+                    <li><a href="rescue.html">Rescue</a></li>
+                    <li><a href="home.html">@Home</a></li>
+                    <li><a href="industrial.html">Industrial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
+                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

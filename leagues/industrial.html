@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboCupIndustrial - RoboCup UAE</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>RoboCup Industrial - RoboCup UAE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -13,275 +14,306 @@
             <div class="nav-logo">
                 <a href="../index.html">RoboCup UAE</a>
             </div>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../about/history.html">History</a>
-                        <a href="../about/objective.html">Objective</a>
-                        <a href="../about/past-events.html">Past Events</a>
+                        <a href="../pages/history.html">History</a>
+                        <a href="../pages/objective.html">Objective</a>
+                        <a href="../pages/past-events.html">Past Events</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../organization/organization.html">Structure</a>
-                        <a href="../organization/trustees.html">Trustees</a>
-                        <a href="../organization/committees.html">Committees</a>
-                        <a href="../organization/regional.html">Regional Partners</a>
+                        <a href="../pages/trustees.html">Trustees</a>
+                        <a href="../pages/committees.html">Committees</a>
+                        <a href="../pages/regional.html">Regional Partners</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/leagues.html" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../leagues/leagues.html">Overview</a>
-                        <a href="soccer.html">RoboCupSoccer</a>
-                        <a href="rescue.html">RoboCupRescue</a>
+                        <a href="soccer.html">RoboCup Soccer</a>
+                        <a href="rescue.html">RoboCup Rescue</a>
                         <a href="home.html">RoboCup@Home</a>
-                        <a href="industrial.html" class="active">RoboCupIndustrial</a>
-                        <a href="junior.html">RoboCupJunior</a>
+                        <a href="industrial.html">RoboCup Industrial</a>
+                        <a href="junior.html">RoboCup Junior</a>
                     </div>
-                </div>
-                <a href="../events/events.html" class="nav-link">Events</a>
-                <a href="../news/news.html" class="nav-link">News</a>
-                <a href="../research/research.html" class="nav-link">Research</a>
-                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
-                <a href="../contact/contact.html" class="nav-link">Contact</a>
-            </div>
+                </li>
+                <li class="nav-item"><a href="../pages/events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="../pages/news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="../pages/research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../pages/gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero-section" style="background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>RoboCupIndustrial</h1>
-                    <p>Advancing industrial automation and smart manufacturing through robotics competition</p>
-                </div>
+    <main class="main-content">
+        <section class="hero-section league-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">RoboCup Industrial</h1>
+                <p class="hero-subtitle">Advancing automation and robotics in industrial applications</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="league-overview">
-                    <div class="league-intro">
-                        <h2>About RoboCupIndustrial</h2>
-                        <p>RoboCupIndustrial focuses on the application of robotics and AI in industrial settings. This league addresses challenges in manufacturing, logistics, and industrial automation, promoting the development of intelligent systems for Industry 4.0.</p>
+                    <div class="overview-text">
+                        <h2>About RoboCup Industrial</h2>
+                        <p>RoboCup Industrial focuses on the application of robotics and AI technologies in industrial settings. The league addresses real-world challenges in manufacturing, logistics, and automation, promoting the development of intelligent systems that can work alongside humans in industrial environments.</p>
                     </div>
-
-                    <div class="league-categories">
-                        <h3>Competition Categories</h3>
-                        <div class="categories-grid">
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-industry"></i>
-                                </div>
-                                <h4>RoboCup Logistics League (RCLL)</h4>
-                                <p>Teams of mobile robots cooperate in a factory automation scenario.</p>
-                                <ul>
-                                    <li>3 robots per team</li>
-                                    <li>Production planning</li>
-                                    <li>Multi-robot coordination</li>
-                                    <li>Real-time decision making</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <h4>RoboCup@Work</h4>
-                                <p>Mobile manipulation robots performing industrial tasks in shop floor scenarios.</p>
-                                <ul>
-                                    <li>Mobile manipulation platforms</li>
-                                    <li>Object recognition and handling</li>
-                                    <li>Navigation in industrial environments</li>
-                                    <li>Task planning and execution</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <h4>Industrial Challenge</h4>
-                                <p>Real industrial problems presented by industry partners for innovative solutions.</p>
-                                <ul>
-                                    <li>Industry-sponsored challenges</li>
-                                    <li>Real-world problem solving</li>
-                                    <li>Innovation and creativity</li>
-                                    <li>Commercial viability</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <h4>Simulation League</h4>
-                                <p>Virtual industrial environments for testing and developing automation solutions.</p>
-                                <ul>
-                                    <li>Digital twin environments</li>
-                                    <li>Process optimization</li>
-                                    <li>Virtual commissioning</li>
-                                    <li>AI-driven automation</li>
-                                </ul>
-                            </div>
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Challenge Areas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">80+</div>
+                            <div class="stat-label">Teams Worldwide</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Countries</div>
                         </div>
                     </div>
+                </div>
 
-                    <div name="industry-40">
-                        <h3>Industry 4.0 Technologies</h3>
-                        <div class="tech-grid">
-                            <div class="tech-card">
-                                <i class="fas fa-network-wired"></i>
-                                <h4>IoT Integration</h4>
-                                <p>Connecting robots and machines in intelligent manufacturing networks.</p>
+                <div class="challenge-areas">
+                    <h2>Challenge Areas</h2>
+                    <div class="areas-grid">
+                        <div class="area-card">
+                            <div class="area-icon">
+                                <i class="fas fa-industry"></i>
                             </div>
-                            <div class="tech-card">
-                                <i class="fas fa-brain"></i>
-                                <h4>AI & Machine Learning</h4>
-                                <p>Intelligent decision making and predictive maintenance in industrial systems.</p>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fas fa-cloud"></i>
-                                <h4>Cloud Computing</h4>
-                                <p>Distributed processing and data analytics for smart manufacturing.</p>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fas fa-eye"></i>
-                                <h4>Computer Vision</h4>
-                                <p>Quality control, object recognition, and visual inspection systems.</p>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fas fa-handshake"></i>
-                                <h4>Human-Robot Collaboration</h4>
-                                <p>Safe and efficient cooperation between humans and robots in industrial settings.</p>
-                            </div>
-                            <div class="tech-card">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>Cybersecurity</h4>
-                                <p>Securing industrial networks and robotic systems from cyber threats.</p>
-                            </div>
+                            <h3>Manufacturing</h3>
+                            <p>Flexible manufacturing systems that can adapt to changing production requirements and work collaboratively with human operators.</p>
+                            <ul class="area-features">
+                                <li>Assembly line automation</li>
+                                <li>Quality control systems</li>
+                                <li>Flexible production</li>
+                                <li>Human-robot collaboration</li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <div class="technical-challenges">
-                        <h3>Technical Challenges</h3>
-                        <div class="challenges-grid">
-                            <div class="challenge-item">
-                                <i class="fas fa-tasks"></i>
-                                <h4>Task Planning</h4>
-                                <p>Optimal scheduling and resource allocation in complex manufacturing scenarios</p>
-                            </div>
-                            <div class="challenge-item">
-                                <i class="fas fa-sync-alt"></i>
-                                <h4>Real-time Control</h4>
-                                <p>Precise timing and coordination in industrial automation systems</p>
-                            </div>
-                            <div class="challenge-item">
-                                <i class="fas fa-chart-line"></i>
-                                <h4>Quality Assurance</h4>
-                                <p>Automated inspection and quality control using advanced sensing</p>
-                            </div>
-                            <div class="challenge-item">
-                                <i class="fas fa-tools"></i>
-                                <h4>Adaptive Manufacturing</h4>
-                                <p>Flexible production systems that adapt to changing requirements</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uae-industry">
-                        <h3>UAE Industrial Robotics</h3>
-                        <div class="industry-grid">
-                            <div class="industry-card">
-                                <h4>Key Sectors</h4>
-                                <ul>
-                                    <li>Oil & Gas Automation</li>
-                                    <li>Aerospace Manufacturing</li>
-                                    <li>Automotive Assembly</li>
-                                    <li>Food Processing</li>
-                                    <li>Logistics & Warehousing</li>
-                                </ul>
-                            </div>
-                            <div class="industry-card">
-                                <h4>Research Centers</h4>
-                                <ul>
-                                    <li>Khalifa University - ARIS</li>
-                                    <li>ADNOC Technology Center</li>
-                                    <li>Emirates Steel Automation Lab</li>
-                                    <li>Dubai Future Foundation</li>
-                                    <li>Masdar Institute</li>
-                                </ul>
-                            </div>
-                            <div class="industry-card">
-                                <h4>Industry Partners</h4>
-                                <ul>
-                                    <li>ADNOC Group</li>
-                                    <li>Emirates Steel</li>
-                                    <li>Etihad Airways Engineering</li>
-                                    <li>DP World</li>
-                                    <li>DEWA</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="applications">
-                        <h3>Industrial Applications</h3>
-                        <div class="applications-grid">
-                            <div class="app-card">
-                                <i class="fas fa-warehouse"></i>
-                                <h4>Smart Warehousing</h4>
-                                <p>Automated storage and retrieval systems with intelligent inventory management.</p>
-                            </div>
-                            <div class="app-card">
-                                <i class="fas fa-wrench"></i>
-                                <h4>Predictive Maintenance</h4>
-                                <p>AI-driven maintenance scheduling to prevent equipment failures.</p>
-                            </div>
-                            <div class="app-card">
-                                <i class="fas fa-search"></i>
-                                <h4>Quality Inspection</h4>
-                                <p>Automated visual inspection and defect detection systems.</p>
-                            </div>
-                            <div class="app-card">
+                        <div class="area-card">
+                            <div class="area-icon">
                                 <i class="fas fa-truck"></i>
-                                <h4>Supply Chain Optimization</h4>
-                                <p>Intelligent logistics and supply chain management systems.</p>
+                            </div>
+                            <h3>Logistics</h3>
+                            <p>Automated warehouse and logistics solutions for efficient material handling, sorting, and distribution.</p>
+                            <ul class="area-features">
+                                <li>Warehouse automation</li>
+                                <li>Inventory management</li>
+                                <li>Autonomous vehicles</li>
+                                <li>Supply chain optimization</li>
+                            </ul>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h3>Maintenance</h3>
+                            <p>Predictive maintenance and automated inspection systems for industrial equipment and infrastructure.</p>
+                            <ul class="area-features">
+                                <li>Predictive analytics</li>
+                                <li>Automated inspection</li>
+                                <li>Condition monitoring</li>
+                                <li>Maintenance robotics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technology-focus">
+                    <h2>Key Technologies</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Artificial Intelligence</h3>
+                            <p>Machine learning algorithms for process optimization, quality control, and predictive maintenance.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Computer Vision</h3>
+                            <p>Advanced vision systems for inspection, quality control, and object recognition in industrial environments.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Collaborative Robotics</h3>
+                            <p>Safe human-robot interaction and collaboration in shared workspaces.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>IoT Integration</h3>
+                            <p>Connected systems and sensors for real-time monitoring and control of industrial processes.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Analytics</h3>
+                            <p>Big data processing and analytics for operational efficiency and decision-making support.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Safety Systems</h3>
+                            <p>Advanced safety protocols and systems for human-robot collaboration in industrial settings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uae-participation">
+                    <h2>UAE Industrial Robotics</h2>
+                    <div class="participation-content">
+                        <div class="participation-text">
+                            <p>The UAE is rapidly advancing in industrial automation as part of its Industry 4.0 initiatives. With major investments in smart manufacturing and logistics, the country is well-positioned to lead in industrial robotics applications.</p>
+
+                            <h3>Key Participants</h3>
+                            <ul class="team-list">
+                                <li><strong>ADNOC Robotics Lab</strong> - Oil & Gas Automation</li>
+                                <li><strong>Emirates Steel Automation</strong> - Manufacturing Robotics</li>
+                                <li><strong>DP World Smart Logistics</strong> - Port Automation</li>
+                                <li><strong>Khalifa Industrial Research</strong> - Khalifa University</li>
+                            </ul>
+                        </div>
+                        <div class="achievements-box">
+                            <h3>UAE Industry 4.0 Focus</h3>
+                            <div class="achievement-item">
+                                <i class="fas fa-oil-can"></i>
+                                <span>Oil & Gas Automation</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-ship"></i>
+                                <span>Smart Ports & Logistics</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-solar-panel"></i>
+                                <span>Renewable Energy Systems</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="getting-started">
-                        <h3>Getting Started</h3>
-                        <div class="getting-started-content">
-                            <div class="requirements">
-                                <h4>Requirements</h4>
-                                <ul>
-                                    <li>Industrial automation knowledge</li>
-                                    <li>Robotics and control systems</li>
-                                    <li>Manufacturing processes understanding</li>
-                                    <li>Industry 4.0 technologies</li>
-                                </ul>
+                <div class="industry-applications">
+                    <h2>Real-World Applications</h2>
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <div class="app-icon">
+                                <i class="fas fa-cogs"></i>
                             </div>
-                            <div class="resources">
-                                <h4>Resources</h4>
-                                <ul>
-                                    <li><a href="#">RoboCupIndustrial Rules</a></li>
-                                    <li><a href="#">Simulation Platforms</a></li>
-                                    <li><a href="#">Industry Standards</a></li>
-                                    <li><a href="#">Technical Documentation</a></li>
-                                </ul>
+                            <h3>Smart Manufacturing</h3>
+                            <p>Adaptive production lines that can quickly reconfigure for different products and respond to demand changes.</p>
+                        </div>
+                        <div class="application-card">
+                            <div class="app-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3>Automated Warehouses</h3>
+                            <p>Fully automated storage and retrieval systems with autonomous mobile robots for efficient logistics.</p>
+                        </div>
+                        <div class="application-card">
+                            <div class="app-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Quality Inspection</h3>
+                            <p>AI-powered visual inspection systems that can detect defects and ensure product quality at high speeds.</p>
+                        </div>
+                        <div class="application-card">
+                            <div class="app-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Predictive Maintenance</h3>
+                            <p>IoT sensors and AI algorithms that predict equipment failures before they occur, reducing downtime.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="competition-format">
+                    <h2>Competition Format</h2>
+                    <div class="format-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h3>Problem Definition</h3>
+                                <p>Real industrial challenges are presented by industry partners, focusing on current automation needs.</p>
                             </div>
                         </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h3>Solution Development</h3>
+                                <p>Teams develop innovative solutions using robotics, AI, and automation technologies.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h3>Testing & Validation</h3>
+                                <p>Solutions are tested in realistic industrial environments with actual equipment and constraints.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <h3>Industry Evaluation</h3>
+                                <p>Industry experts evaluate solutions based on practicality, efficiency, and commercial viability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="getting-started">
+                    <h2>Getting Started</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Industry Partnership</h3>
+                            <p>Connect with industrial partners to understand real-world automation challenges and requirements.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Multidisciplinary Team</h3>
+                            <p>Form teams with expertise in robotics, AI, industrial engineering, and business development.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Prototype Development</h3>
+                            <p>Develop working prototypes that demonstrate feasibility and potential for industrial deployment.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h3>Scale & Deploy</h3>
+                            <p>Work towards scalable solutions that can be implemented in real industrial environments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Shape the Future of Industry</h2>
+                    <p>Join the revolution in industrial automation and smart manufacturing</p>
+                    <div class="cta-buttons">
+                        <a href="../pages/contact.html" class="btn btn-primary">Get Involved</a>
+                        <a href="../pages/research.html" class="btn btn-secondary">Research Partnerships</a>
                     </div>
                 </div>
             </div>
@@ -289,37 +321,47 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>RoboCup UAE</h3>
-                    <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../about/history.html">About</a></li>
-                        <li><a href="../leagues/leagues.html">Leagues</a></li>
-                        <li><a href="../events/events.html">Events</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RoboCup UAE</h3>
+                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/leagues.html">Leagues</a></li>
+                    <li><a href="../pages/events.html">Events</a></li>
+                    <li><a href="../pages/news.html">News</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h4>Leagues</h4>
+                <ul>
+                    <li><a href="soccer.html">Soccer</a></li>
+                    <li><a href="rescue.html">Rescue</a></li>
+                    <li><a href="home.html">@Home</a></li>
+                    <li><a href="industrial.html">Industrial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
+                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

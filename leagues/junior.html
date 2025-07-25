@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboCupJunior - RoboCup UAE</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>RoboCup Junior - RoboCup UAE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -13,292 +14,354 @@
             <div class="nav-logo">
                 <a href="../index.html">RoboCup UAE</a>
             </div>
-            <div class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../about/history.html">History</a>
-                        <a href="../about/objective.html">Objective</a>
-                        <a href="../about/past-events.html">Past Events</a>
+                        <a href="../pages/history.html">History</a>
+                        <a href="../pages/objective.html">Objective</a>
+                        <a href="../pages/past-events.html">Past Events</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../organization/organization.html">Structure</a>
-                        <a href="../organization/trustees.html">Trustees</a>
-                        <a href="../organization/committees.html">Committees</a>
-                        <a href="../organization/regional.html">Regional Partners</a>
+                        <a href="../pages/trustees.html">Trustees</a>
+                        <a href="../pages/committees.html">Committees</a>
+                        <a href="../pages/regional.html">Regional Partners</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../pages/leagues.html" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../leagues/leagues.html">Overview</a>
-                        <a href="soccer.html">RoboCupSoccer</a>
-                        <a href="rescue.html">RoboCupRescue</a>
+                        <a href="soccer.html">RoboCup Soccer</a>
+                        <a href="rescue.html">RoboCup Rescue</a>
                         <a href="home.html">RoboCup@Home</a>
-                        <a href="industrial.html">RoboCupIndustrial</a>
-                        <a href="junior.html" class="active">RoboCupJunior</a>
+                        <a href="industrial.html">RoboCup Industrial</a>
+                        <a href="junior.html">RoboCup Junior</a>
                     </div>
-                </div>
-                <a href="../events/events.html" class="nav-link">Events</a>
-                <a href="../news/news.html" class="nav-link">News</a>
-                <a href="../research/research.html" class="nav-link">Research</a>
-                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
-                <a href="../contact/contact.html" class="nav-link">Contact</a>
-            </div>
+                </li>
+                <li class="nav-item"><a href="../pages/events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="../pages/news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="../pages/research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../pages/gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero-section" style="background: linear-gradient(135deg, #9c27b0 0%, #e91e63 100%);">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>RoboCupJunior</h1>
-                    <p>Inspiring the next generation of roboticists through educational robotics competitions</p>
-                </div>
+    <main class="main-content">
+        <section class="hero-section league-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">RoboCup Junior</h1>
+                <p class="hero-subtitle">Inspiring the next generation of robotics innovators</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <div class="league-overview">
-                    <div class="league-intro">
-                        <h2>About RoboCupJunior</h2>
-                        <p>RoboCupJunior is an educational initiative designed to introduce robotics and AI to young students. It provides a platform for students aged 8-19 to learn about robotics, programming, and teamwork through exciting competitions and challenges.</p>
+                    <div class="overview-text">
+                        <h2>About RoboCup Junior</h2>
+                        <p>RoboCup Junior is an educational initiative designed to introduce young people to robotics and AI through exciting competitions. It provides a platform for students aged 8-19 to develop technical skills, creativity, and teamwork while having fun with robots.</p>
                     </div>
-
-                    <div class="league-categories">
-                        <h3>Competition Categories</h3>
-                        <div class="categories-grid">
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-futbol"></i>
-                                </div>
-                                <h4>Soccer</h4>
-                                <p>Autonomous robots play football in various divisions based on age and skill level.</p>
-                                <ul>
-                                    <li>Soccer Lightweight (2v2)</li>
-                                    <li>Soccer Open (1v1 or 2v2)</li>
-                                    <li>Soccer Simulation</li>
-                                    <li>Age groups: Primary, Secondary</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-first-aid"></i>
-                                </div>
-                                <h4>Rescue</h4>
-                                <p>Robots navigate through challenging terrains to rescue victims in disaster scenarios.</p>
-                                <ul>
-                                    <li>Rescue Line (follow line, avoid obstacles)</li>
-                                    <li>Rescue Maze (navigate maze, find victims)</li>
-                                    <li>Rescue Simulation</li>
-                                    <li>Focus on problem-solving</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-theater-masks"></i>
-                                </div>
-                                <h4>OnStage</h4>
-                                <p>Creative performances combining robotics, art, music, and storytelling.</p>
-                                <ul>
-                                    <li>OnStage Preliminary</li>
-                                    <li>OnStage Advanced</li>
-                                    <li>Artistic and technical evaluation</li>
-                                    <li>Creativity and innovation focus</li>
-                                </ul>
-                            </div>
-
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <h4>CoSpace</h4>
-                                <p>Virtual robotics competition using simulation environments and programming.</p>
-                                <ul>
-                                    <li>CoSpace Rescue</li>
-                                    <li>CoSpace Soccer</li>
-                                    <li>Programming-focused</li>
-                                    <li>Accessible to all schools</li>
-                                </ul>
-                            </div>
+                    <div class="overview-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Competition Leagues</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Teams Worldwide</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Countries</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="age-divisions">
-                        <h3>Age Divisions</h3>
-                        <div class="divisions-grid">
-                            <div class="division-card">
+                <div class="age-divisions">
+                    <h2>Age Divisions</h2>
+                    <div class="divisions-grid">
+                        <div class="division-card">
+                            <div class="division-icon">
                                 <i class="fas fa-child"></i>
-                                <h4>Primary Division</h4>
-                                <p>Ages 8-14 years</p>
-                                <ul>
-                                    <li>Simplified rules and challenges</li>
-                                    <li>Focus on learning and fun</li>
-                                    <li>Team-based approach</li>
-                                    <li>Mentorship encouraged</li>
-                                </ul>
                             </div>
-                            <div class="division-card">
+                            <h3>Primary Division</h3>
+                            <p class="age-range">Ages 8-12</p>
+                            <ul class="division-features">
+                                <li>Introduction to robotics</li>
+                                <li>Basic programming concepts</li>
+                                <li>Simple challenges</li>
+                                <li>Focus on creativity</li>
+                            </ul>
+                        </div>
+
+                        <div class="division-card">
+                            <div class="division-icon">
                                 <i class="fas fa-user-graduate"></i>
-                                <h4>Secondary Division</h4>
-                                <p>Ages 15-19 years</p>
-                                <ul>
-                                    <li>Advanced technical challenges</li>
-                                    <li>Independent problem-solving</li>
-                                    <li>Research and documentation</li>
-                                    <li>Preparation for higher education</li>
-                                </ul>
                             </div>
+                            <h3>Secondary Division</h3>
+                            <p class="age-range">Ages 13-19</p>
+                            <ul class="division-features">
+                                <li>Advanced programming</li>
+                                <li>Complex challenges</li>
+                                <li>Technical documentation</li>
+                                <li>Research presentations</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div class="educational-benefits">
-                        <h3>Educational Benefits</h3>
-                        <div class="benefits-grid">
-                            <div class="benefit-card">
+                <div class="competition-leagues">
+                    <h2>Competition Leagues</h2>
+                    <div class="leagues-grid">
+                        <div class="league-card">
+                            <div class="league-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h3>Soccer</h3>
+                            <p>Autonomous robots play soccer in a controlled environment, developing skills in navigation, ball detection, and strategy.</p>
+                            <ul class="league-features">
+                                <li>Lightweight & Open divisions</li>
+                                <li>Infrared ball detection</li>
+                                <li>Autonomous gameplay</li>
+                                <li>Team coordination</li>
+                            </ul>
+                        </div>
+
+                        <div class="league-card">
+                            <div class="league-icon">
+                                <i class="fas fa-life-ring"></i>
+                            </div>
+                            <h3>Rescue</h3>
+                            <p>Robots navigate through challenging terrain to locate and rescue victims, teaching problem-solving and engineering skills.</p>
+                            <ul class="league-features">
+                                <li>Line following</li>
+                                <li>Obstacle avoidance</li>
+                                <li>Victim detection</li>
+                                <li>Maze navigation</li>
+                            </ul>
+                        </div>
+
+                        <div class="league-card">
+                            <div class="league-icon">
+                                <i class="fas fa-theater-masks"></i>
+                            </div>
+                            <h3>OnStage</h3>
+                            <p>Creative performances combining robotics with art, music, and storytelling to showcase technical and artistic skills.</p>
+                            <ul class="league-features">
+                                <li>Creative storytelling</li>
+                                <li>Choreographed movements</li>
+                                <li>Music synchronization</li>
+                                <li>Artistic expression</li>
+                            </ul>
+                        </div>
+
+                        <div class="league-card">
+                            <div class="league-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3>Simulation</h3>
+                            <p>Virtual robotics competitions using computer simulations, making robotics accessible without expensive hardware.</p>
+                            <ul class="league-features">
+                                <li>Virtual environments</li>
+                                <li>Programming focus</li>
+                                <li>Accessible to all schools</li>
+                                <li>AI and algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="educational-benefits">
+                    <h2>Educational Benefits</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-code"></i>
-                                <h4>Programming Skills</h4>
-                                <p>Learn various programming languages and develop computational thinking.</p>
                             </div>
-                            <div class="benefit-card">
+                            <h3>Programming Skills</h3>
+                            <p>Students learn various programming languages and develop computational thinking through hands-on robotics projects.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-cogs"></i>
-                                <h4>Engineering Design</h4>
-                                <p>Understand mechanical design, electronics, and system integration.</p>
                             </div>
-                            <div class="benefit-card">
+                            <h3>Engineering Design</h3>
+                            <p>Mechanical design, electronics integration, and system optimization teach engineering principles.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-users"></i>
-                                <h4>Teamwork</h4>
-                                <p>Develop collaboration, communication, and leadership skills.</p>
                             </div>
-                            <div class="benefit-card">
+                            <h3>Teamwork</h3>
+                            <p>Collaborative projects develop communication, leadership, and project management skills.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-lightbulb"></i>
-                                <h4>Problem Solving</h4>
-                                <p>Enhance critical thinking and creative problem-solving abilities.</p>
                             </div>
-                            <div class="benefit-card">
+                            <h3>Problem Solving</h3>
+                            <p>Complex challenges encourage creative thinking and systematic problem-solving approaches.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-presentation"></i>
-                                <h4>Presentation Skills</h4>
-                                <p>Learn to document, present, and explain technical solutions.</p>
                             </div>
-                            <div class="benefit-card">
+                            <h3>Presentation Skills</h3>
+                            <p>Technical interviews and presentations develop communication and documentation abilities.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
                                 <i class="fas fa-globe"></i>
-                                <h4>Global Perspective</h4>
-                                <p>Connect with international peers and understand global challenges.</p>
+                            </div>
+                            <h3>Global Perspective</h3>
+                            <p>International competitions expose students to diverse cultures and global collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uae-participation">
+                    <h2>RoboCup Junior in UAE</h2>
+                    <div class="participation-content">
+                        <div class="participation-text">
+                            <p>The UAE has embraced RoboCup Junior as part of its commitment to STEM education and preparing students for the future economy. Schools across the Emirates participate in regional competitions and represent the UAE at international events.</p>
+
+                            <h3>Participating Schools & Organizations</h3>
+                            <ul class="team-list">
+                                <li><strong>Dubai International Academy</strong> - Multiple league participation</li>
+                                <li><strong>American School of Dubai</strong> - Soccer & Rescue leagues</li>
+                                <li><strong>GEMS Education Schools</strong> - Network-wide robotics programs</li>
+                                <li><strong>Abu Dhabi Education Council</strong> - Public school initiatives</li>
+                                <li><strong>Sharjah Private Education Authority</strong> - Regional competitions</li>
+                            </ul>
+                        </div>
+                        <div class="achievements-box">
+                            <h3>UAE Achievements</h3>
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>World Championship Qualifiers</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Regional Champions 2023</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-star"></i>
+                                <span>Best Technical Presentation</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="uae-participation">
-                        <h3>UAE Schools & Achievements</h3>
-                        <div class="achievements-grid">
-                            <div class="achievement-card">
-                                <h4>Participating Schools</h4>
-                                <ul>
-                                    <li>GEMS Education Schools</li>
-                                    <li>Repton School Dubai</li>
-                                    <li>Dubai International Academy</li>
-                                    <li>American School of Dubai</li>
-                                    <li>Sharjah American International School</li>
-                                    <li>Abu Dhabi International School</li>
-                                </ul>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Recent Achievements</h4>
-                                <ul>
-                                    <li>World Champions - Soccer Lightweight 2023</li>
-                                    <li>Regional Champions - Rescue Line 2023</li>
-                                    <li>Best Presentation - OnStage 2022</li>
-                                    <li>Innovation Award - CoSpace 2023</li>
-                                    <li>Technical Excellence - Rescue Maze 2022</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="curriculum-integration">
-                        <h3>Curriculum Integration</h3>
-                        <div class="curriculum-grid">
-                            <div class="subject-card">
+                <div class="curriculum-integration">
+                    <h2>Curriculum Integration</h2>
+                    <div class="curriculum-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon">
                                 <i class="fas fa-calculator"></i>
-                                <h4>Mathematics</h4>
-                                <p>Geometry, trigonometry, statistics, and algorithmic thinking.</p>
                             </div>
-                            <div class="subject-card">
-                                <i class="fas fa-flask"></i>
-                                <h4>Science</h4>
-                                <p>Physics principles, electronics, sensors, and scientific method.</p>
+                            <h3>Mathematics</h3>
+                            <p>Geometry, trigonometry, and statistics applied in robot navigation, sensor calibration, and performance analysis.</p>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-atom"></i>
                             </div>
-                            <div class="subject-card">
-                                <i class="fas fa-microchip"></i>
-                                <h4>Technology</h4>
-                                <p>Programming, digital systems, and emerging technologies.</p>
+                            <h3>Physics</h3>
+                            <p>Mechanics, electronics, and sensor physics concepts demonstrated through practical robotics applications.</p>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-laptop-code"></i>
                             </div>
-                            <div class="subject-card">
-                                <i class="fas fa-tools"></i>
-                                <h4>Engineering</h4>
-                                <p>Design process, prototyping, testing, and optimization.</p>
+                            <h3>Computer Science</h3>
+                            <p>Programming, algorithms, and artificial intelligence concepts implemented in robot control systems.</p>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-palette"></i>
                             </div>
+                            <h3>Arts</h3>
+                            <p>Creative design, storytelling, and performance arts integrated through OnStage league competitions.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="teacher-resources">
-                        <h3>Teacher Resources</h3>
-                        <div class="resources-grid">
-                            <div class="resource-card">
-                                <h4>Training Programs</h4>
-                                <ul>
-                                    <li>Teacher workshops and certification</li>
-                                    <li>Curriculum development support</li>
-                                    <li>Technical training sessions</li>
-                                    <li>Mentorship programs</li>
-                                </ul>
-                            </div>
-                            <div class="resource-card">
-                                <h4>Educational Materials</h4>
-                                <ul>
-                                    <li>Lesson plans and activities</li>
-                                    <li>Hardware and software guides</li>
-                                    <li>Assessment rubrics</li>
-                                    <li>Project examples</li>
-                                </ul>
-                            </div>
+                <div class="getting-started">
+                    <h2>Getting Started</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Form a Team</h3>
+                            <p>Gather 2-4 students with diverse interests in programming, engineering, and design.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Choose Your League</h3>
+                            <p>Select a competition league based on your team's interests and skill level.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Build & Program</h3>
+                            <p>Design, build, and program your robot using approved platforms and tools.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h3>Compete & Learn</h3>
+                            <p>Participate in regional competitions and work towards international qualification.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="getting-started">
-                        <h3>Getting Started</h3>
-                        <div class="getting-started-content">
-                            <div class="requirements">
-                                <h4>Requirements</h4>
-                                <ul>
-                                    <li>Students aged 8-19 years</li>
-                                    <li>School or club affiliation</li>
-                                    <li>Basic robotics kit</li>
-                                    <li>Adult mentor/supervisor</li>
-                                </ul>
+                <div class="resources-section">
+                    <h2>Resources for Educators</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-book"></i>
                             </div>
-                            <div class="resources">
-                                <h4>Resources</h4>
-                                <ul>
-                                    <li><a href="#">RoboCupJunior Rules</a></li>
-                                    <li><a href="#">Getting Started Guide</a></li>
-                                    <li><a href="#">Hardware Recommendations</a></li>
-                                    <li><a href="#">Programming Tutorials</a></li>
-                                </ul>
-                            </div>
+                            <h3>Curriculum Guides</h3>
+                            <p>Comprehensive lesson plans and activities aligned with educational standards.</p>
                         </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Training Videos</h3>
+                            <p>Step-by-step tutorials for robot construction and programming techniques.</p>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h3>Teacher Training</h3>
+                            <p>Professional development workshops for educators new to robotics.</p>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Community Support</h3>
+                            <p>Online forums and local meetups for sharing experiences and solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Inspire the Next Generation</h2>
+                    <p>Join RoboCup Junior and help students discover their passion for robotics and technology</p>
+                    <div class="cta-buttons">
+                        <a href="../pages/contact.html" class="btn btn-primary">Start a Team</a>
+                        <a href="../pages/events.html" class="btn btn-secondary">Find Competitions</a>
                     </div>
                 </div>
             </div>
@@ -306,37 +369,47 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>RoboCup UAE</h3>
-                    <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../about/history.html">About</a></li>
-                        <li><a href="../leagues/leagues.html">Leagues</a></li>
-                        <li><a href="../events/events.html">Events</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RoboCup UAE</h3>
+                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/leagues.html">Leagues</a></li>
+                    <li><a href="../pages/events.html">Events</a></li>
+                    <li><a href="../pages/news.html">News</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h4>Leagues</h4>
+                <ul>
+                    <li><a href="soccer.html">Soccer</a></li>
+                    <li><a href="rescue.html">Rescue</a></li>
+                    <li><a href="home.html">@Home</a></li>
+                    <li><a href="industrial.html">Industrial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
+                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
