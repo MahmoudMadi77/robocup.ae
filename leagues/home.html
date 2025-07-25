@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboCup@Home - RoboCup UAE</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">RoboCup UAE</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../about/history.html">History</a>
+                        <a href="../about/objective.html">Objective</a>
+                        <a href="../about/past-events.html">Past Events</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../organization/organization.html">Structure</a>
+                        <a href="../organization/trustees.html">Trustees</a>
+                        <a href="../organization/committees.html">Committees</a>
+                        <a href="../organization/regional.html">Regional Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../leagues/leagues.html">Overview</a>
+                        <a href="soccer.html">RoboCupSoccer</a>
+                        <a href="rescue.html">RoboCupRescue</a>
+                        <a href="home.html" class="active">RoboCup@Home</a>
+                        <a href="industrial.html">RoboCupIndustrial</a>
+                        <a href="junior.html">RoboCupJunior</a>
+                    </div>
+                </div>
+                <a href="../events/events.html" class="nav-link">Events</a>
+                <a href="../news/news.html" class="nav-link">News</a>
+                <a href="../research/research.html" class="nav-link">Research</a>
+                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                <a href="../contact/contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" style="background: linear-gradient(135deg, #388e3c 0%, #4caf50 100%);">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>RoboCup@Home</h1>
+                    <p>Service robots for everyday domestic environments and human-robot interaction</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="league-overview">
+                    <div class="league-intro">
+                        <h2>About RoboCup@Home</h2>
+                        <p>RoboCup@Home is the largest international annual competition for autonomous service robots. It focuses on the development of service and assistive robot technology with high relevance for future personal domestic applications.</p>
+                    </div>
+
+                    <div class="league-categories">
+                        <h3>Competition Categories</h3>
+                        <div class="categories-grid">
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4>Domestic Standard Platform League (DSPL)</h4>
+                                <p>Toyota Human Support Robot (HSR) platform focusing on software development.</p>
+                                <ul>
+                                    <li>Standardized hardware platform</li>
+                                    <li>Focus on AI and software</li>
+                                    <li>Manipulation capabilities</li>
+                                    <li>Human-robot interaction</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <h4>Open Platform League (OPL)</h4>
+                                <p>Custom robot platforms with diverse hardware solutions and approaches.</p>
+                                <ul>
+                                    <li>Custom robot designs</li>
+                                    <li>Hardware innovation</li>
+                                    <li>Diverse sensor systems</li>
+                                    <li>Flexible manipulation</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Education League</h4>
+                                <p>Educational focus with simplified tasks for learning and development.</p>
+                                <ul>
+                                    <li>Educational objectives</li>
+                                    <li>Simplified scenarios</li>
+                                    <li>Learning-focused tasks</li>
+                                    <li>Student participation</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h4>Simulation League</h4>
+                                <p>Virtual environments for testing and developing service robot algorithms.</p>
+                                <ul>
+                                    <li>Gazebo simulation</li>
+                                    <li>ROS integration</li>
+                                    <li>Virtual environments</li>
+                                    <li>Algorithm testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competition-tasks">
+                        <h3>Competition Tasks</h3>
+                        <div class="tasks-grid">
+                            <div class="task-card">
+                                <i class="fas fa-microphone"></i>
+                                <h4>Speech & Person Recognition</h4>
+                                <p>Understanding natural language commands and recognizing people in domestic environments.</p>
+                            </div>
+                            <div class="task-card">
+                                <i class="fas fa-hand-paper"></i>
+                                <h4>Object Manipulation</h4>
+                                <p>Grasping, carrying, and placing objects in realistic household scenarios.</p>
+                            </div>
+                            <div class="task-card">
+                                <i class="fas fa-route"></i>
+                                <h4>Navigation & Mapping</h4>
+                                <p>Autonomous navigation in cluttered, dynamic home environments.</p>
+                            </div>
+                            <div class="task-card">
+                                <i class="fas fa-users"></i>
+                                <h4>Human-Robot Interaction</h4>
+                                <p>Natural interaction with humans including gesture recognition and social behavior.</p>
+                            </div>
+                            <div class="task-card">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h4>Shopping & Errands</h4>
+                                <p>Assisting with daily tasks like shopping, cleaning, and household management.</p>
+                            </div>
+                            <div class="task-card">
+                                <i class="fas fa-utensils"></i>
+                                <h4>Restaurant Service</h4>
+                                <p>Serving customers in restaurant-like environments with complex interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-challenges">
+                        <h3>Technical Challenges</h3>
+                        <div class="challenges-grid">
+                            <div class="challenge-item">
+                                <i class="fas fa-brain"></i>
+                                <h4>Artificial Intelligence</h4>
+                                <p>Natural language processing, computer vision, and decision making</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-hand-rock"></i>
+                                <h4>Manipulation</h4>
+                                <p>Dexterous grasping and manipulation of everyday objects</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-comments"></i>
+                                <h4>Human Interaction</h4>
+                                <p>Natural and intuitive communication with humans</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-map"></i>
+                                <h4>Semantic Mapping</h4>
+                                <p>Understanding and mapping domestic environments semantically</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uae-participation">
+                        <h3>UAE Teams & Innovation</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <h4>Participating Teams</h4>
+                                <ul>
+                                    <li>Khalifa University - KU Robotics</li>
+                                    <li>American University of Sharjah</li>
+                                    <li>UAE University - Service Robotics Lab</li>
+                                    <li>University of Sharjah</li>
+                                    <li>Higher Colleges of Technology</li>
+                                </ul>
+                            </div>
+                            <div class="achievement-card">
+                                <h4>Notable Achievements</h4>
+                                <ul>
+                                    <li>DSPL Innovation Award 2023</li>
+                                    <li>Best Human-Robot Interaction 2022</li>
+                                    <li>OPL Technical Challenge Winner 2023</li>
+                                    <li>Education League Champions 2022</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="applications">
+                        <h3>Real-World Applications</h3>
+                        <div class="applications-grid">
+                            <div class="app-card">
+                                <i class="fas fa-wheelchair"></i>
+                                <h4>Elderly Care</h4>
+                                <p>Assistive robots helping elderly people with daily activities and companionship.</p>
+                            </div>
+                            <div class="app-card">
+                                <i class="fas fa-broom"></i>
+                                <h4>Household Assistance</h4>
+                                <p>Robots performing cleaning, organizing, and maintenance tasks in homes.</p>
+                            </div>
+                            <div class="app-card">
+                                <i class="fas fa-hotel"></i>
+                                <h4>Hospitality Services</h4>
+                                <p>Service robots in hotels, restaurants, and customer service environments.</p>
+                            </div>
+                            <div class="app-card">
+                                <i class="fas fa-heartbeat"></i>
+                                <h4>Healthcare Support</h4>
+                                <p>Robots assisting healthcare professionals and patients in medical settings.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="getting-started">
+                        <h3>Getting Started</h3>
+                        <div class="getting-started-content">
+                            <div class="requirements">
+                                <h4>Requirements</h4>
+                                <ul>
+                                    <li>ROS (Robot Operating System) knowledge</li>
+                                    <li>Computer vision and AI skills</li>
+                                    <li>Human-robot interaction expertise</li>
+                                    <li>Manipulation and navigation experience</li>
+                                </ul>
+                            </div>
+                            <div class="resources">
+                                <h4>Resources</h4>
+                                <ul>
+                                    <li><a href="#">RoboCup@Home Rulebook</a></li>
+                                    <li><a href="#">Simulation Environment</a></li>
+                                    <li><a href="#">Hardware Recommendations</a></li>
+                                    <li><a href="#">Development Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RoboCup UAE</h3>
+                    <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/history.html">About</a></li>
+                        <li><a href="../leagues/leagues.html">Leagues</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

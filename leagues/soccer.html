@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboCupSoccer - RoboCup UAE</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">RoboCup UAE</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../about/history.html">History</a>
+                        <a href="../about/objective.html">Objective</a>
+                        <a href="../about/past-events.html">Past Events</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../organization/organization.html">Structure</a>
+                        <a href="../organization/trustees.html">Trustees</a>
+                        <a href="../organization/committees.html">Committees</a>
+                        <a href="../organization/regional.html">Regional Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link active">Leagues <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../leagues/leagues.html">Overview</a>
+                        <a href="soccer.html" class="active">RoboCupSoccer</a>
+                        <a href="rescue.html">RoboCupRescue</a>
+                        <a href="home.html">RoboCup@Home</a>
+                        <a href="industrial.html">RoboCupIndustrial</a>
+                        <a href="junior.html">RoboCupJunior</a>
+                    </div>
+                </div>
+                <a href="../events/events.html" class="nav-link">Events</a>
+                <a href="../news/news.html" class="nav-link">News</a>
+                <a href="../research/research.html" class="nav-link">Research</a>
+                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                <a href="../contact/contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>RoboCupSoccer</h1>
+                    <p>The original and most popular league of RoboCup, featuring autonomous robots playing football</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="league-overview">
+                    <div class="league-intro">
+                        <h2>About RoboCupSoccer</h2>
+                        <p>RoboCupSoccer is the flagship competition of RoboCup, where teams of autonomous robots compete in football matches. This league serves as a testbed for multi-agent systems, real-time reasoning, and robotics technologies.</p>
+                    </div>
+
+                    <div class="league-categories">
+                        <h3>Competition Categories</h3>
+                        <div class="categories-grid">
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h4>Small Size League (SSL)</h4>
+                                <p>Fast-paced games with small robots (≤180mm diameter) on a 12m x 9m field. Features centralized vision and high-speed gameplay.</p>
+                                <ul>
+                                    <li>6 robots per team</li>
+                                    <li>Global vision system</li>
+                                    <li>Wireless communication</li>
+                                    <li>Maximum speed: 3 m/s</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h4>Middle Size League (MSL)</h4>
+                                <p>Larger autonomous robots (≤52cm diameter) with onboard sensing and processing capabilities.</p>
+                                <ul>
+                                    <li>5 robots per team</li>
+                                    <li>Onboard vision and processing</li>
+                                    <li>18m x 12m field</li>
+                                    <li>Fully autonomous operation</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <h4>Standard Platform League (SPL)</h4>
+                                <p>Humanoid robots (NAO) competing in football, focusing on software development and AI.</p>
+                                <ul>
+                                    <li>7 NAO robots per team</li>
+                                    <li>Identical hardware platform</li>
+                                    <li>Software-only competition</li>
+                                    <li>Bipedal locomotion</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <i class="fas fa-user-astronaut"></i>
+                                </div>
+                                <h4>Humanoid League</h4>
+                                <p>Various humanoid robots competing in different size classes, from KidSize to AdultSize.</p>
+                                <ul>
+                                    <li>KidSize (40-90cm)</li>
+                                    <li>TeenSize (80-140cm)</li>
+                                    <li>AdultSize (130-180cm)</li>
+                                    <li>Custom humanoid platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-challenges">
+                        <h3>Technical Challenges</h3>
+                        <div class="challenges-grid">
+                            <div class="challenge-item">
+                                <i class="fas fa-eye"></i>
+                                <h4>Computer Vision</h4>
+                                <p>Real-time object detection, tracking, and field localization</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-brain"></i>
+                                <h4>Multi-Agent AI</h4>
+                                <p>Coordination, strategy, and decision-making in dynamic environments</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-running"></i>
+                                <h4>Motion Control</h4>
+                                <p>Precise movement, ball handling, and collision avoidance</p>
+                            </div>
+                            <div class="challenge-item">
+                                <i class="fas fa-wifi"></i>
+                                <h4>Communication</h4>
+                                <p>Efficient team communication and information sharing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uae-participation">
+                        <h3>UAE Teams & Achievements</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <h4>Participating Universities</h4>
+                                <ul>
+                                    <li>American University of Sharjah (AUS)</li>
+                                    <li>United Arab Emirates University (UAEU)</li>
+                                    <li>Khalifa University</li>
+                                    <li>University of Sharjah</li>
+                                    <li>Higher Colleges of Technology</li>
+                                </ul>
+                            </div>
+                            <div class="achievement-card">
+                                <h4>Recent Achievements</h4>
+                                <ul>
+                                    <li>SSL Regional Champions 2023</li>
+                                    <li>MSL Best Technical Paper 2022</li>
+                                    <li>SPL Quarter-finals 2023</li>
+                                    <li>Humanoid Innovation Award 2022</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="getting-started">
+                        <h3>Getting Started</h3>
+                        <div class="getting-started-content">
+                            <div class="requirements">
+                                <h4>Requirements</h4>
+                                <ul>
+                                    <li>Strong programming skills (C++, Python)</li>
+                                    <li>Knowledge of robotics and AI</li>
+                                    <li>Team of 3-8 members</li>
+                                    <li>University or research institution affiliation</li>
+                                </ul>
+                            </div>
+                            <div class="resources">
+                                <h4>Resources</h4>
+                                <ul>
+                                    <li><a href="#">Official RoboCupSoccer Rules</a></li>
+                                    <li><a href="#">Technical Documentation</a></li>
+                                    <li><a href="#">Simulation Environments</a></li>
+                                    <li><a href="#">Hardware Specifications</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RoboCup UAE</h3>
+                    <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/history.html">About</a></li>
+                        <li><a href="../leagues/leagues.html">Leagues</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
