@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboCup UAE - Advancing Robotics and AI in the UAE</title>
+    <title>RoboCup UAE - Advancing Robotics and AI in the Emirates</title>
+    <meta name="description" content="RoboCup UAE promotes robotics and AI through world-class competitions, education, and innovation in the United Arab Emirates.">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -17,12 +17,13 @@
                 <span class="logo-text">RoboCup UAE</span>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#competitions" class="nav-link">Competitions</a>
-                <a href="#news" class="nav-link">News</a>
-                <a href="#events" class="nav-link">Events</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="pages/competitions.html" class="nav-link">Competitions</a>
+                <a href="pages/committees.html" class="nav-link">Committees</a>
+                <a href="pages/news.html" class="nav-link">News</a>
+                <a href="pages/events.html" class="nav-link">Events</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -32,119 +33,123 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
+        <div class="hero-background"></div>
+        <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">RoboCup UAE</h1>
-                <p class="hero-subtitle">Advancing Robotics and Artificial Intelligence in the United Arab Emirates</p>
-                <p class="hero-description">Join the premier robotics competition that brings together students, researchers, and innovators to push the boundaries of autonomous robotics and AI.</p>
+                <h1 class="hero-title">Welcome to <span class="highlight">RoboCup UAE</span></h1>
+                <p class="hero-subtitle">Advancing robotics and artificial intelligence through world-class competitions, education, and innovation in the United Arab Emirates.</p>
                 <div class="hero-buttons">
-                    <a href="#competitions" class="btn btn-primary">Join Competition</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                    <a href="pages/competitions.html" class="btn btn-primary">Join Competition</a>
+                    <a href="pages/about.html" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="robot-animation">
-                    <i class="fas fa-robot"></i>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Teams</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Universities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Leagues</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
                 <h2>About RoboCup UAE</h2>
-                <p>Fostering innovation in robotics and AI across the Emirates</p>
+                <p>Fostering innovation and excellence in robotics across the Emirates</p>
             </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-trophy"></i>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>RoboCup UAE is dedicated to advancing robotics and artificial intelligence research, education, and innovation throughout the United Arab Emirates. We organize world-class competitions that challenge teams to push the boundaries of what's possible in robotics.</p>
+
+                    <h3>Our Vision</h3>
+                    <p>To establish the UAE as a leading hub for robotics innovation in the Middle East, fostering collaboration between academia, industry, and government to create solutions that benefit society.</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-trophy"></i>
+                            <h4>World-Class Competitions</h4>
+                            <p>International standard competitions across multiple leagues</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Educational Excellence</h4>
+                            <p>Comprehensive training programs and workshops</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Industry Partnerships</h4>
+                            <p>Strong connections with leading technology companies</p>
+                        </div>
                     </div>
-                    <h3>Competition Excellence</h3>
-                    <p>World-class robotics competitions that challenge participants to innovate and excel in autonomous robotics.</p>
                 </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-robot"></i>
+                        <p>RoboCup UAE in Action</p>
                     </div>
-                    <h3>Education Focus</h3>
-                    <p>Promoting STEM education and research in robotics, AI, and autonomous systems across UAE institutions.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Community Building</h3>
-                    <p>Creating a vibrant community of robotics enthusiasts, researchers, and industry professionals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Competitions Section -->
     <section id="competitions" class="competitions">
         <div class="container">
             <div class="section-header">
-                <h2>Competition Categories</h2>
-                <p>Multiple leagues for different skill levels and interests</p>
+                <h2>Competition Leagues</h2>
+                <p>Explore our diverse range of robotics competitions</p>
             </div>
             <div class="competitions-grid">
                 <div class="competition-card">
-                    <div class="card-image">
+                    <div class="card-icon">
                         <i class="fas fa-futbol"></i>
                     </div>
                     <h3>RoboCup Soccer</h3>
-                    <p>Autonomous robots compete in soccer matches, demonstrating advanced AI and coordination.</p>
-                    <ul>
-                        <li>Small Size League</li>
-                        <li>Middle Size League</li>
-                        <li>Standard Platform League</li>
-                        <li>Humanoid League</li>
-                    </ul>
+                    <p>Autonomous robots compete in soccer matches, demonstrating advanced AI, computer vision, and multi-agent coordination.</p>
+                    <a href="pages/competitions.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="competition-card">
-                    <div class="card-image">
+                    <div class="card-icon">
                         <i class="fas fa-home"></i>
                     </div>
                     <h3>RoboCup@Home</h3>
-                    <p>Service robots performing tasks in realistic home environments.</p>
-                    <ul>
-                        <li>Domestic Standard Platform</li>
-                        <li>Open Platform League</li>
-                        <li>Social Standard Platform</li>
-                    </ul>
+                    <p>Service robots navigate domestic environments, performing household tasks and human-robot interaction challenges.</p>
+                    <a href="pages/competitions.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="competition-card">
-                    <div class="card-image">
+                    <div class="card-icon">
                         <i class="fas fa-ambulance"></i>
                     </div>
                     <h3>RoboCup Rescue</h3>
-                    <p>Robots designed for search and rescue operations in disaster scenarios.</p>
-                    <ul>
-                        <li>Rescue Robot League</li>
-                        <li>Rescue Simulation League</li>
-                    </ul>
+                    <p>Robots simulate search and rescue operations in disaster scenarios, testing navigation and mapping capabilities.</p>
+                    <a href="pages/competitions.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="competition-card">
-                    <div class="card-image">
+                    <div class="card-icon">
                         <i class="fas fa-industry"></i>
                     </div>
                     <h3>RoboCup@Work</h3>
-                    <p>Industrial robots performing complex manufacturing and logistics tasks.</p>
-                    <ul>
-                        <li>Mobile Manipulation</li>
-                        <li>Logistics League</li>
-                    </ul>
+                    <p>Industrial robots perform complex manufacturing and logistics tasks in realistic work environments.</p>
+                    <a href="pages/competitions.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- News Section -->
     <section id="news" class="news">
         <div class="container">
             <div class="section-header">
@@ -155,31 +160,33 @@
                 <article class="news-card">
                     <div class="news-date">March 15, 2024</div>
                     <h3>RoboCup UAE 2024 Registration Opens</h3>
-                    <p>Registration is now open for the annual RoboCup UAE competition. Teams from across the region are invited to participate.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <p>Registration is now open for the biggest robotics competition in the UAE. Don't miss your chance to compete!</p>
+                    <a href="pages/news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">March 10, 2024</div>
+                    <h3>New Partnership with UAE Universities</h3>
+                    <p>We're excited to announce new partnerships with leading universities to expand robotics education.</p>
+                    <a href="pages/news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
                 <article class="news-card">
                     <div class="news-date">February 28, 2024</div>
-                    <h3>Partnership with UAE Universities</h3>
-                    <p>RoboCup UAE announces new partnerships with leading universities to promote robotics education.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-                <article class="news-card">
-                    <div class="news-date">February 10, 2024</div>
                     <h3>Workshop Series Announcement</h3>
-                    <p>Join our upcoming workshop series on advanced robotics and AI techniques for competition preparation.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <p>Join our comprehensive workshop series covering advanced robotics techniques and AI programming.</p>
+                    <a href="pages/news.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </article>
+            </div>
+            <div class="section-cta">
+                <a href="pages/news.html" class="btn btn-outline">View All News</a>
             </div>
         </div>
     </section>
 
-    <!-- Events Section -->
     <section id="events" class="events">
         <div class="container">
             <div class="section-header">
                 <h2>Upcoming Events</h2>
-                <p>Join us at these exciting robotics events</p>
+                <p>Mark your calendar for these exciting events</p>
             </div>
             <div class="events-timeline">
                 <div class="event-item">
@@ -188,9 +195,9 @@
                         <span class="day">15</span>
                     </div>
                     <div class="event-content">
-                        <h3>RoboCup UAE 2024 Competition</h3>
+                        <h3>RoboCup UAE 2024 National Championship</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Dubai World Trade Centre</p>
-                        <p>The main annual competition featuring all leagues and categories.</p>
+                        <p>The premier robotics competition featuring all major leagues and international participants.</p>
                     </div>
                 </div>
                 <div class="event-item">
@@ -201,7 +208,7 @@
                     <div class="event-content">
                         <h3>Robotics Workshop Series</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Various UAE Universities</p>
-                        <p>Hands-on workshops for students and educators on robotics fundamentals.</p>
+                        <p>Hands-on workshops covering robotics fundamentals and advanced techniques.</p>
                     </div>
                 </div>
                 <div class="event-item">
@@ -210,49 +217,45 @@
                         <span class="day">10</span>
                     </div>
                     <div class="event-content">
-                        <h3>AI & Robotics Summit</h3>
+                        <h3>AI & Robotics Innovation Summit</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Abu Dhabi</p>
                         <p>Industry summit bringing together researchers, students, and professionals.</p>
                     </div>
                 </div>
             </div>
+            <div class="section-cta">
+                <a href="pages/events.html" class="btn btn-outline">View All Events</a>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get In Touch</h2>
+                <h2>Get Involved</h2>
                 <p>Ready to join the robotics revolution?</p>
             </div>
-            <div class="contact-grid">
+            <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
                             <p>info@robocup.ae</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
                             <p>+971 4 XXX XXXX</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Address</h4>
-                            <p>Dubai, United Arab Emirates</p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Dubai, UAE</p>
                         </div>
                     </div>
                 </div>
@@ -264,15 +267,6 @@
                         <input type="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <select required>
-                            <option value="">Select Interest</option>
-                            <option value="competition">Competition Participation</option>
-                            <option value="sponsorship">Sponsorship</option>
-                            <option value="partnership">Partnership</option>
-                            <option value="general">General Inquiry</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <textarea placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -281,7 +275,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -301,19 +294,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#competitions">Competitions</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#events">Events</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/competitions.html">Competitions</a></li>
+                        <li><a href="pages/committees.html">Committees</a></li>
+                        <li><a href="pages/news.html">News</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Competitions</h4>
                     <ul>
-                        <li><a href="#">RoboCup Soccer</a></li>
-                        <li><a href="#">RoboCup@Home</a></li>
-                        <li><a href="#">RoboCup Rescue</a></li>
-                        <li><a href="#">RoboCup@Work</a></li>
+                        <li><a href="pages/competitions.html">Soccer</a></li>
+                        <li><a href="pages/competitions.html">@Home</a></li>
+                        <li><a href="pages/competitions.html">Rescue</a></li>
+                        <li><a href="pages/competitions.html">@Work</a></li>
+                        <li><a href="pages/competitions.html">Junior</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
