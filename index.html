@@ -3,327 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboCup UAE - Robot Competitions in the United Arab Emirates</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>RoboCup UAE - Advancing Robotics and AI in the UAE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>RoboCup UAE</h1>
-                </div>
-                <div class="nav-menu">
-                    <a href="#home">Home</a>
-                    <div class="dropdown">
-                        <a href="#about">About</a>
-                        <div class="dropdown-content">
-                            <a href="#history">History of RoboCup UAE</a>
-                            <a href="#objective">Objective</a>
-                            <a href="#past-events">Past Events</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="#organization">Organization</a>
-                        <div class="dropdown-content">
-                            <a href="#trustees">Board Members</a>
-                            <a href="#committees">Committees</a>
-                            <a href="#regional">Regional Partners</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="#leagues">Leagues</a>
-                        <div class="dropdown-content">
-                            <a href="#soccer">RoboCupSoccer</a>
-                            <a href="#rescue">RoboCupRescue</a>
-                            <a href="#home-league">RoboCup@Home</a>
-                            <a href="#industrial">RoboCupIndustrial</a>
-                            <a href="#junior">RoboCupJunior</a>
-                        </div>
-                    </div>
-                    <a href="#events">Events</a>
-                    <a href="#news">News</a>
-                    <a href="#research">Research</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.svg" alt="RoboCup UAE" class="logo">
+                <span class="logo-text">RoboCup UAE</span>
             </div>
-        </nav>
-    </header>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#competitions" class="nav-link">Competitions</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Welcome To</h1>
-                <h2 class="hero-title">Robot Competitions</h2>
-                <h3 class="hero-subtitle">United Arab Emirates</h3>
-                <p class="hero-description">Advancing robotics and AI in the UAE through competitive innovation</p>
+                <h1 class="hero-title">RoboCup UAE</h1>
+                <p class="hero-subtitle">Advancing Robotics and Artificial Intelligence in the United Arab Emirates</p>
+                <p class="hero-description">Join the premier robotics competition that brings together students, researchers, and innovators to push the boundaries of autonomous robotics and AI.</p>
+                <div class="hero-buttons">
+                    <a href="#competitions" class="btn btn-primary">Join Competition</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
             </div>
-        </section>
+            <div class="hero-image">
+                <div class="robot-animation">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
                 <h2>About RoboCup UAE</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>RoboCup UAE is the national chapter of the international RoboCup initiative, dedicated to advancing the state of the art of intelligent robots in the United Arab Emirates. Established to promote robotics education, research, and innovation across the UAE, we organize competitions and events that bring together students, researchers, and robotics enthusiasts.</p>
-                        <p>Our mission aligns with the UAE's Vision 2071 and the National Strategy for Artificial Intelligence 2031, fostering a culture of innovation and technological advancement in robotics and AI.</p>
+                <p>Fostering innovation in robotics and AI across the Emirates</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Participating Teams</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Universities</p>
-                        </div>
-                        <div class="stat">
-                            <h3>7</h3>
-                            <p>Emirates</p>
-                        </div>
+                    <h3>Competition Excellence</h3>
+                    <p>World-class robotics competitions that challenge participants to innovate and excel in autonomous robotics.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <h3>Education Focus</h3>
+                    <p>Promoting STEM education and research in robotics, AI, and autonomous systems across UAE institutions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Creating a vibrant community of robotics enthusiasts, researchers, and industry professionals.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Leagues Section -->
-        <section id="leagues" class="leagues">
-            <div class="container">
-                <h2>RoboCup UAE Domain Leagues</h2>
-                <div class="leagues-grid">
-                    <div class="league-card">
-                        <h3>RoboCupSoccer</h3>
-                        <p>Autonomous robots playing soccer in various categories including Humanoid, Standard Platform, Middle Size, Small Size, and Simulation leagues.</p>
-                        <ul>
-                            <li>Humanoid League</li>
-                            <li>Standard Platform League</li>
-                            <li>Middle Size League</li>
-                            <li>Small Size League</li>
-                            <li>Simulation League</li>
-                        </ul>
+    <!-- Competitions Section -->
+    <section id="competitions" class="competitions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Competition Categories</h2>
+                <p>Multiple leagues for different skill levels and interests</p>
+            </div>
+            <div class="competitions-grid">
+                <div class="competition-card">
+                    <div class="card-image">
+                        <i class="fas fa-futbol"></i>
                     </div>
-                    <div class="league-card">
-                        <h3>RoboCupRescue</h3>
-                        <p>Robots designed for search and rescue operations in disaster scenarios, testing both physical robots and simulation systems.</p>
-                        <ul>
-                            <li>Robot League</li>
-                            <li>Simulation League</li>
-                        </ul>
+                    <h3>RoboCup Soccer</h3>
+                    <p>Autonomous robots compete in soccer matches, demonstrating advanced AI and coordination.</p>
+                    <ul>
+                        <li>Small Size League</li>
+                        <li>Middle Size League</li>
+                        <li>Standard Platform League</li>
+                        <li>Humanoid League</li>
+                    </ul>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <div class="league-card">
-                        <h3>RoboCup@Home</h3>
-                        <p>Service robots operating in domestic environments, focusing on human-robot interaction and practical applications.</p>
-                        <ul>
-                            <li>Open Platform League</li>
-                            <li>Domestic Standard Platform</li>
-                            <li>Social Standard Platform</li>
-                        </ul>
+                    <h3>RoboCup@Home</h3>
+                    <p>Service robots performing tasks in realistic home environments.</p>
+                    <ul>
+                        <li>Domestic Standard Platform</li>
+                        <li>Open Platform League</li>
+                        <li>Social Standard Platform</li>
+                    </ul>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image">
+                        <i class="fas fa-ambulance"></i>
                     </div>
-                    <div class="league-card">
-                        <h3>RoboCupIndustrial</h3>
-                        <p>Industrial automation and logistics challenges for robots in manufacturing and warehouse environments.</p>
-                        <ul>
-                            <li>RoboCup@Work</li>
-                            <li>Logistics League</li>
-                        </ul>
+                    <h3>RoboCup Rescue</h3>
+                    <p>Robots designed for search and rescue operations in disaster scenarios.</p>
+                    <ul>
+                        <li>Rescue Robot League</li>
+                        <li>Rescue Simulation League</li>
+                    </ul>
+                </div>
+                <div class="competition-card">
+                    <div class="card-image">
+                        <i class="fas fa-industry"></i>
                     </div>
-                    <div class="league-card">
-                        <h3>RoboCupJunior</h3>
-                        <p>Educational robotics competitions for students aged 14-19, fostering STEM education and innovation.</p>
-                        <ul>
-                            <li>Soccer</li>
-                            <li>OnStage</li>
-                            <li>Rescue</li>
-                        </ul>
-                    </div>
+                    <h3>RoboCup@Work</h3>
+                    <p>Industrial robots performing complex manufacturing and logistics tasks.</p>
+                    <ul>
+                        <li>Mobile Manipulation</li>
+                        <li>Logistics League</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- News Section -->
-        <section id="news" class="news">
-            <div class="container">
-                <h2>Recent News</h2>
-                <div class="news-grid">
-                    <article class="news-item">
-                        <h3>RoboCup UAE 2025 Registration Opens</h3>
-                        <p class="news-date">March 15, 2025</p>
-                        <p>Registration is now open for RoboCup UAE 2025, taking place in Dubai. Teams from across the region are invited to participate in this premier robotics competition.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </article>
-                    <article class="news-item">
-                        <h3>Partnership with UAE Universities</h3>
-                        <p class="news-date">February 28, 2025</p>
-                        <p>RoboCup UAE announces new partnerships with leading universities across the Emirates to promote robotics education and research.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </article>
-                    <article class="news-item">
-                        <h3>Junior League Expansion</h3>
-                        <p class="news-date">February 10, 2025</p>
-                        <p>The RoboCupJunior program expands to include more schools across the UAE, bringing robotics education to young innovators.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </article>
-                </div>
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest developments</p>
             </div>
-        </section>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">March 15, 2024</div>
+                    <h3>RoboCup UAE 2024 Registration Opens</h3>
+                    <p>Registration is now open for the annual RoboCup UAE competition. Teams from across the region are invited to participate.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">February 28, 2024</div>
+                    <h3>Partnership with UAE Universities</h3>
+                    <p>RoboCup UAE announces new partnerships with leading universities to promote robotics education.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">February 10, 2024</div>
+                    <h3>Workshop Series Announcement</h3>
+                    <p>Join our upcoming workshop series on advanced robotics and AI techniques for competition preparation.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-        <!-- Events Section -->
-        <section id="events" class="events">
-            <div class="container">
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
                 <h2>Upcoming Events</h2>
-                <div class="events-timeline">
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="month">Apr</span>
-                            <span class="day">15-18</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>RoboCup UAE 2025</h3>
-                            <p>Dubai World Trade Centre</p>
-                            <p>The premier robotics competition in the UAE featuring all major leagues and junior competitions.</p>
-                        </div>
+                <p>Join us at these exciting robotics events</p>
+            </div>
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Apr</span>
+                        <span class="day">15</span>
                     </div>
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="month">Jun</span>
-                            <span class="day">10-12</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>RoboCup Junior UAE Championship</h3>
-                            <p>Abu Dhabi</p>
-                            <p>National championship for junior teams, qualifying event for international competitions.</p>
-                        </div>
+                    <div class="event-content">
+                        <h3>RoboCup UAE 2024 Competition</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Dubai World Trade Centre</p>
+                        <p>The main annual competition featuring all leagues and categories.</p>
                     </div>
-                    <div class="event-item">
-                        <div class="event-date">
-                            <span class="month">Sep</span>
-                            <span class="day">5-7</span>
-                        </div>
-                        <div class="event-content">
-                            <h3>Robotics Workshop Series</h3>
-                            <p>Multiple Locations</p>
-                            <p>Educational workshops for students and educators across the UAE.</p>
-                        </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">May</span>
+                        <span class="day">20</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Robotics Workshop Series</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Various UAE Universities</p>
+                        <p>Hands-on workshops for students and educators on robotics fundamentals.</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Jun</span>
+                        <span class="day">10</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>AI & Robotics Summit</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Abu Dhabi</p>
+                        <p>Industry summit bringing together researchers, students, and professionals.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Organization Section -->
-        <section id="organization" class="organization">
-            <div class="container">
-                <h2>Organization</h2>
-                <div class="org-grid">
-                    <div class="org-member">
-                        <div class="member-photo">
-                            <div class="placeholder-photo">Photo</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to join the robotics revolution?</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <h3>Dr. Ahmed Al-Mansoori</h3>
-                        <p>President</p>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@robocup.ae</p>
+                        </div>
                     </div>
-                    <div class="org-member">
-                        <div class="member-photo">
-                            <div class="placeholder-photo">Photo</div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <h3>Prof. Fatima Al-Zahra</h3>
-                        <p>Vice President</p>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+971 4 XXX XXXX</p>
+                        </div>
                     </div>
-                    <div class="org-member">
-                        <div class="member-photo">
-                            <div class="placeholder-photo">Photo</div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h3>Dr. Mohammed bin Rashid</h3>
-                        <p>Technical Director</p>
-                    </div>
-                    <div class="org-member">
-                        <div class="member-photo">
-                            <div class="placeholder-photo">Photo</div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Dubai, United Arab Emirates</p>
                         </div>
-                        <h3>Eng. Aisha Al-Nuaimi</h3>
-                        <p>Education Coordinator</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <div class="contact-item">
-                            <strong>Email:</strong> info@robocup.ae
-                        </div>
-                        <div class="contact-item">
-                            <strong>Phone:</strong> +971 4 123 4567
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address:</strong> Dubai Knowledge Park, Dubai, UAE
-                        </div>
-                        <div class="social-links">
-                            <a href="#">Twitter</a>
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Instagram</a>
-                        </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
                     </div>
-                    <div class="contact-form">
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <input type="text" placeholder="Subject" required>
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                            <button type="submit">Send Message</button>
-                        </form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Interest</option>
+                            <option value="competition">Competition Participation</option>
+                            <option value="sponsorship">Sponsorship</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>RoboCup UAE</h3>
-                    <p>Advancing robotics and AI in the United Arab Emirates through competitive innovation and education.</p>
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="RoboCup UAE" class="logo">
+                        <span class="logo-text">RoboCup UAE</span>
+                    </div>
+                    <p>Advancing robotics and AI in the UAE through world-class competitions and education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#leagues">Leagues</a></li>
-                        <li><a href="#events">Events</a></li>
+                        <li><a href="#competitions">Competitions</a></li>
                         <li><a href="#news">News</a></li>
+                        <li><a href="#events">Events</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Leagues</h3>
+                    <h4>Competitions</h4>
                     <ul>
-                        <li><a href="#soccer">Soccer</a></li>
-                        <li><a href="#rescue">Rescue</a></li>
-                        <li><a href="#home-league">@Home</a></li>
-                        <li><a href="#junior">Junior</a></li>
+                        <li><a href="#">RoboCup Soccer</a></li>
+                        <li><a href="#">RoboCup@Home</a></li>
+                        <li><a href="#">RoboCup Rescue</a></li>
+                        <li><a href="#">RoboCup@Work</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>info@robocup.ae</p>
-                    <p>+971 4 123 4567</p>
-                    <p>Dubai, UAE</p>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@robocup.ae</li>
+                        <li><i class="fas fa-phone"></i> +971 4 XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 RoboCup UAE Federation. All rights reserved.</p>
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

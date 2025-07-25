@@ -1,100 +1,77 @@
 # RoboCup UAE Website
 
-A modern, responsive website for RoboCup UAE - advancing robotics and AI through competition and collaboration in the United Arab Emirates.
+A modern, responsive website for RoboCup UAE - the premier robotics competition in the United Arab Emirates.
 
-## 🚀 Quick Start
+## Features
 
-1. **Download the project files**
-2. **Extract the zip file**
-3. **Open `index.html` in your web browser**
+- **Modern Design**: Clean, professional design with smooth animations
+- **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
+- **Interactive Elements**: Smooth scrolling, hover effects, and dynamic navigation
+- **Competition Information**: Detailed information about all RoboCup leagues
+- **News & Events**: Latest updates and upcoming events
+- **Contact Form**: Functional contact form with validation
 
-## 📁 Project Structure
+## Structure
 
 ```
-robocup-uae-website/
-├── index.html              # Homepage
+robocup-ae-website/
+├── index.html              # Main homepage
 ├── css/
-│   └── styles.css          # Main stylesheet
+│   └── style.css          # Main stylesheet
 ├── js/
-│   └── script.js           # JavaScript functionality
-├── pages/                  # Main pages
-│   ├── history.html
-│   ├── objective.html
-│   ├── past-events.html
-│   ├── organization.html
-│   ├── trustees.html
-│   ├── committees.html
-│   ├── regional.html
-│   ├── leagues.html
-│   ├── events.html
-│   ├── news.html
-│   ├── research.html
-│   ├── gallery.html
-│   └── contact.html
-└── leagues/                # League-specific pages
-    ├── soccer.html
-    ├── rescue.html
-    ├── home.html
-    ├── industrial.html
-    └── junior.html
+│   └── script.js          # JavaScript functionality
+├── images/                # Image assets
+├── pages/
+│   ├── about.html         # About page
+│   ├── competitions.html  # Competitions page
+│   ├── news.html         # News page
+│   ├── events.html       # Events page
+│   └── contact.html      # Contact page
+└── README.md             # This file
 ```
 
-## 🎨 Features
+## Deployment
 
-- **Modern Design**: Clean, professional layout with enhanced styling
-- **Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Interactive**: Smooth animations and hover effects
-- **Accessible**: Proper semantic HTML and ARIA labels
-- **Fast Loading**: Optimized CSS and JavaScript
-- **SEO Friendly**: Proper meta tags and structure
+### GitHub Pages Deployment
 
-## 🛠️ Customization
-
-### Colors
-The website uses a professional color scheme defined in `css/styles.css`:
-- Primary: #1e40af (Blue)
-- Secondary: #059669 (Green)
-- Accent: #dc2626 (Red)
-- Text: #1f2937 (Dark Gray)
-
-### Fonts
-- Primary Font: Inter (Google Fonts)
-- Icons: Font Awesome 6.0
-
-### Content
-All content can be easily modified by editing the HTML files. Key areas to customize:
-- Contact information
-- Team details
-- Event dates
-- News articles
-- Research information
-
-## 🌐 Deployment
-
-### GitHub Pages (Free)
 1. Create a new repository on GitHub
 2. Upload all files to the repository
-3. Go to Settings > Pages
+3. Go to repository Settings > Pages
 4. Select "Deploy from a branch" and choose "main"
 5. Your site will be available at `https://yourusername.github.io/repository-name`
 
-### Web Hosting
-1. Upload all files to your web hosting provider
-2. Ensure `index.html` is in the root directory
-3. Configure your domain (if using custom domain)
+### Custom Domain Setup (robocup.ae)
 
-### Local Testing
-1. Open `index.html` in any modern web browser
-2. For full functionality, serve from a local web server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
+1. In your repository, create a file named `CNAME` in the root directory
+2. Add your domain `robocup.ae` to the CNAME file
+3. Configure your domain's DNS settings:
+   - Add a CNAME record pointing to `yourusername.github.io`
+   - Or add A records pointing to GitHub Pages IPs:
+     - 185.199.108.153
+     - 185.199.109.153
+     - 185.199.110.153
+     - 185.199.111.153
 
-   # Using Node.js
-   npx serve .
-   ```
+## Customization
 
-## 📱 Browser Support
+### Colors
+The main color scheme uses:
+- Primary: #667eea (Blue gradient start)
+- Secondary: #764ba2 (Purple gradient end)
+- Text: #333 (Dark gray)
+- Background: #f8f9fa (Light gray)
+
+### Fonts
+- Primary font: Inter (Google Fonts)
+- Icons: Font Awesome 6
+
+### Content Updates
+- Update team information in the about section
+- Add real news articles and events
+- Replace placeholder contact information
+- Add actual competition dates and details
+
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
@@ -102,24 +79,19 @@ All content can be easily modified by editing the HTML files. Key areas to custo
 - Edge (latest)
 - Mobile browsers
 
-## 🔧 Technical Details
+## Performance
 
-- **HTML5**: Semantic markup
-- **CSS3**: Flexbox, Grid, Custom Properties
-- **JavaScript**: ES6+ features
-- **Icons**: Font Awesome
-- **Fonts**: Google Fonts (Inter)
+- Optimized CSS and JavaScript
+- Lazy loading for images
+- Minimal external dependencies
+- Fast loading times
 
-## 📞 Support
+## Contact
 
-For questions or support regarding the website:
+For questions about this website, contact:
 - Email: info@robocup.ae
-- Website: [RoboCup UAE](https://robocup.ae)
+- Website: https://robocup.ae
 
-## 📄 License
+## License
 
 © 2024 RoboCup UAE. All rights reserved.
-
----
-
-**Built with ❤️ for the RoboCup UAE community**

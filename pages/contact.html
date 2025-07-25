@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - RoboCup UAE</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,43 +12,18 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">RoboCup UAE</a>
+                <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                <span class="logo-text">RoboCup UAE</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="history.html">History</a>
-                        <a href="objective.html">Objective</a>
-                        <a href="past-events.html">Past Events</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="trustees.html">Trustees</a>
-                        <a href="committees.html">Committees</a>
-                        <a href="regional.html">Regional Partners</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="leagues.html" class="nav-link">Leagues <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="../leagues/soccer.html">RoboCup Soccer</a>
-                        <a href="../leagues/rescue.html">RoboCup Rescue</a>
-                        <a href="../leagues/home.html">RoboCup@Home</a>
-                        <a href="../leagues/industrial.html">RoboCup Industrial</a>
-                        <a href="../leagues/junior.html">RoboCup Junior</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="competitions.html" class="nav-link">Competitions</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -56,352 +31,199 @@
         </div>
     </nav>
 
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title">Contact Us</h1>
-                <p class="hero-subtitle">Get in touch with the RoboCup UAE community</p>
-            </div>
-        </section>
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready to join the robotics revolution? We'd love to hear from you!</p>
+        </div>
+    </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h2>Get in Touch</h2>
-                        <p>Whether you're interested in participating, collaborating, or learning more about RoboCup UAE, we'd love to hear from you. Our team is here to help you get started on your robotics journey.</p>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have questions about RoboCup UAE? Want to participate in our competitions? Get in touch with us through any of the following channels.</p>
 
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="method-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="method-content">
-                                    <h3>Email</h3>
-                                    <p>info@robocup.ae</p>
-                                    <p>For general inquiries and information</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-method">
-                                <div class="method-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="method-content">
-                                    <h3>Phone</h3>
-                                    <p>+971 XX XXX XXXX</p>
-                                    <p>Monday - Friday, 9:00 AM - 5:00 PM</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-method">
-                                <div class="method-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="method-content">
-                                    <h3>Address</h3>
-                                    <p>RoboCup UAE Headquarters<br>
-                                    Dubai Knowledge Park<br>
-                                    Dubai, United Arab Emirates</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-method">
-                                <div class="method-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="method-content">
-                                    <h3>Social Media</h3>
-                                    <div class="social-links">
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@robocup.ae</p>
+                            <p>For general inquiries and information</p>
                         </div>
                     </div>
 
-                    <div class="contact-form-container">
-                        <form class="contact-form">
-                            <h2>Send us a Message</h2>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="organization">Organization/Institution</label>
-                                <input type="text" id="organization" name="organization">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="participation">Team Participation</option>
-                                    <option value="sponsorship">Sponsorship Opportunities</option>
-                                    <option value="research">Research Collaboration</option>
-                                    <option value="education">Educational Programs</option>
-                                    <option value="media">Media & Press</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="league">Interested League (if applicable)</label>
-                                <select id="league" name="league">
-                                    <option value="">Select a league</option>
-                                    <option value="soccer">RoboCup Soccer</option>
-                                    <option value="rescue">RoboCup Rescue</option>
-                                    <option value="home">RoboCup@Home</option>
-                                    <option value="industrial">RoboCup Industrial</option>
-                                    <option value="junior">RoboCup Junior</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="newsletter" value="yes">
-                                    <span class="checkmark"></span>
-                                    Subscribe to our newsletter for updates and announcements
-                                </label>
-                            </div>
-
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="privacy" value="yes" required>
-                                    <span class="checkmark"></span>
-                                    I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> *
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+971 4 XXX XXXX</p>
+                            <p>Monday - Friday, 9:00 AM - 6:00 PM</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="department-contacts">
-                    <h2>Department Contacts</h2>
-                    <div class="departments-grid">
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <h3>Competitions</h3>
-                            <p>Information about competitions, registration, and rules</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> competitions@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Dr. Ahmed Al-Rashid</p>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>Education & Training</h3>
-                            <p>Educational programs, workshops, and training materials</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> education@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Prof. Fatima Al-Zahra</p>
-                            </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Dubai, United Arab Emirates</p>
+                            <p>Exact location provided upon registration</p>
                         </div>
+                    </div>
 
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-flask"></i>
-                            </div>
-                            <h3>Research & Development</h3>
-                            <p>Research collaborations, publications, and funding</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> research@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Dr. Mohammed Al-Khouri</p>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
                         </div>
-
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h3>Partnerships</h3>
-                            <p>Industry partnerships, sponsorships, and collaborations</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> partnerships@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Ms. Aisha Al-Mansoori</p>
-                            </div>
-                        </div>
-
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                            <h3>Media & Communications</h3>
-                            <p>Press inquiries, media coverage, and public relations</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> media@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Mr. Omar Al-Shamsi</p>
-                            </div>
-                        </div>
-
-                        <div class="department-card">
-                            <div class="dept-icon">
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <h3>Technical Support</h3>
-                            <p>Technical assistance, platform support, and troubleshooting</p>
-                            <div class="dept-contact">
-                                <p><i class="fas fa-envelope"></i> support@robocup.ae</p>
-                                <p><i class="fas fa-user"></i> Eng. Khalid Al-Mazrouei</p>
+                        <div class="contact-details">
+                            <h4>Social Media</h4>
+                            <p>Follow us for updates and news</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="office-locations">
-                    <h2>Office Locations</h2>
-                    <div class="locations-grid">
-                        <div class="location-card">
-                            <h3>Dubai Headquarters</h3>
-                            <div class="location-details">
-                                <p><i class="fas fa-map-marker-alt"></i> Dubai Knowledge Park, Block 2A, Dubai</p>
-                                <p><i class="fas fa-phone"></i> +971 4 XXX XXXX</p>
-                                <p><i class="fas fa-clock"></i> Sunday - Thursday: 8:00 AM - 5:00 PM</p>
-                            </div>
-                        </div>
+                <form class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
 
-                        <div class="location-card">
-                            <h3>Abu Dhabi Office</h3>
-                            <div class="location-details">
-                                <p><i class="fas fa-map-marker-alt"></i> Khalifa University, Abu Dhabi</p>
-                                <p><i class="fas fa-phone"></i> +971 2 XXX XXXX</p>
-                                <p><i class="fas fa-clock"></i> Sunday - Thursday: 8:00 AM - 5:00 PM</p>
-                            </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
                         </div>
-
-                        <div class="location-card">
-                            <h3>Sharjah Branch</h3>
-                            <div class="location-details">
-                                <p><i class="fas fa-map-marker-alt"></i> American University of Sharjah</p>
-                                <p><i class="fas fa-phone"></i> +971 6 XXX XXXX</p>
-                                <p><i class="fas fa-clock"></i> Sunday - Thursday: 8:00 AM - 5:00 PM</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
                         </div>
                     </div>
-                </div>
 
-                <div class="faq-section">
-                    <h2>Frequently Asked Questions</h2>
-                    <div class="faq-list">
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How can I register my team for RoboCup competitions?</h3>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Team registration typically opens 3-4 months before each competition. Visit our Events page for current registration information and deadlines. You can also contact our Competitions department at competitions@robocup.ae for specific requirements.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>What support is available for new teams?</h3>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We offer comprehensive support including technical workshops, mentorship programs, and educational resources. Contact our Education & Training department for information about upcoming workshops and training opportunities.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>How can my organization become a sponsor or partner?</h3>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>We welcome partnerships with organizations that share our vision for advancing robotics and AI. Contact our Partnerships department at partnerships@robocup.ae to discuss sponsorship opportunities and collaboration possibilities.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h3>Are there opportunities for international collaboration?</h3>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes! We actively collaborate with international RoboCup organizations and research institutions. Contact our Research & Development department to explore collaboration opportunities in research, education, and competition organization.</p>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>RoboCup UAE</h3>
-                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="leagues.html">Leagues</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="news.html">News</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Leagues</h4>
-                <ul>
-                    <li><a href="../leagues/soccer.html">Soccer</a></li>
-                    <li><a href="../leagues/rescue.html">Rescue</a></li>
-                    <li><a href="../leagues/home.html">@Home</a></li>
-                    <li><a href="../leagues/industrial.html">Industrial</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
-                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">Organization/University</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Area of Interest *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select your interest</option>
+                            <option value="competition">Competition Participation</option>
+                            <option value="sponsorship">Sponsorship Opportunities</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="workshop">Workshops & Training</option>
+                            <option value="volunteer">Volunteering</option>
+                            <option value="media">Media & Press</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for updates and announcements
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do I register for RoboCup UAE?</h4>
+                    <p>Registration opens annually in March. Visit our competitions page for detailed information and registration forms.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What are the age requirements?</h4>
+                    <p>RoboCup Junior is for ages 8-19, while the main competition is open to university students and professionals of all ages.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you provide training workshops?</h4>
+                    <p>Yes! We offer regular workshops throughout the year covering robotics fundamentals, AI programming, and competition strategies.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can international teams participate?</h4>
+                    <p>Absolutely! We welcome teams from around the world to participate in RoboCup UAE competitions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What equipment do I need?</h4>
+                    <p>Equipment requirements vary by league. Check our competition guidelines for specific technical requirements for each category.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can my company sponsor RoboCup UAE?</h4>
+                    <p>We offer various sponsorship packages. Contact us directly to discuss partnership opportunities that align with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                        <span class="logo-text">RoboCup UAE</span>
+                    </div>
+                    <p>Advancing robotics and AI in the UAE through world-class competitions and education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@robocup.ae</li>
+                        <li><i class="fas fa-phone"></i> +971 4 XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

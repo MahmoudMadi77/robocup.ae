@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News - RoboCup UAE</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,43 +12,18 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">RoboCup UAE</a>
+                <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                <span class="logo-text">RoboCup UAE</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="history.html">History</a>
-                        <a href="objective.html">Objective</a>
-                        <a href="past-events.html">Past Events</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="trustees.html">Trustees</a>
-                        <a href="committees.html">Committees</a>
-                        <a href="regional.html">Regional Partners</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="leagues.html" class="nav-link">Leagues <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="../leagues/soccer.html">RoboCup Soccer</a>
-                        <a href="../leagues/rescue.html">RoboCup Rescue</a>
-                        <a href="../leagues/home.html">RoboCup@Home</a>
-                        <a href="../leagues/industrial.html">RoboCup Industrial</a>
-                        <a href="../leagues/junior.html">RoboCup Junior</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="news.html" class="nav-link active">News</a></li>
-                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="competitions.html" class="nav-link">Competitions</a>
+                <a href="news.html" class="nav-link active">News</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -56,254 +31,92 @@
         </div>
     </nav>
 
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title">News & Updates</h1>
-                <p class="hero-subtitle">Latest developments in UAE robotics and RoboCup activities</p>
-            </div>
-        </section>
+    <section class="page-header">
+        <div class="container">
+            <h1>Latest News</h1>
+            <p>Stay updated with the latest developments in RoboCup UAE</p>
+        </div>
+    </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="news-filter">
-                    <h2>Filter News</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All News</button>
-                        <button class="filter-btn" data-filter="competition">Competitions</button>
-                        <button class="filter-btn" data-filter="research">Research</button>
-                        <button class="filter-btn" data-filter="education">Education</button>
-                        <button class="filter-btn" data-filter="partnership">Partnerships</button>
-                    </div>
-                </div>
+    <section class="news">
+        <div class="container">
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">March 15, 2024</div>
+                    <h3>RoboCup UAE 2024 Registration Now Open</h3>
+                    <p>We are excited to announce that registration for RoboCup UAE 2024 is now officially open! Teams from across the region are invited to participate.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-                <div class="news-grid">
-                    <article class="news-card featured" data-category="competition">
-                        <div class="news-image">
-                            <div class="news-category">Competition</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">March 10, 2024</span>
-                                <span class="news-author">By RoboCup UAE Team</span>
-                            </div>
-                            <h2 class="news-title">UAE Teams Excel at RoboCup Asia-Pacific 2024</h2>
-                            <p class="news-excerpt">Three UAE teams secured top positions at the RoboCup Asia-Pacific Championship, with UAEU Falcons winning the Small Size League and AUS Wolves placing second in the Standard Platform League.</p>
-                            <div class="news-tags">
-                                <span class="tag">Championship</span>
-                                <span class="tag">Success</span>
-                                <span class="tag">International</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                <article class="news-card">
+                    <div class="news-date">March 10, 2024</div>
+                    <h3>New Partnership with UAE Universities</h3>
+                    <p>RoboCup UAE announces strategic partnerships with leading universities across the Emirates to promote robotics education.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-                    <article class="news-card" data-category="education">
-                        <div class="news-image">
-                            <div class="news-category">Education</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">March 8, 2024</span>
-                                <span class="news-author">By Education Committee</span>
-                            </div>
-                            <h3 class="news-title">New RoboCup Junior Program Launches in 50 UAE Schools</h3>
-                            <p class="news-excerpt">The Ministry of Education announces the expansion of robotics education with RoboCup Junior programs now available in 50 schools across all seven emirates.</p>
-                            <div class="news-tags">
-                                <span class="tag">Education</span>
-                                <span class="tag">Schools</span>
-                                <span class="tag">Expansion</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                <article class="news-card">
+                    <div class="news-date">February 28, 2024</div>
+                    <h3>Workshop Series: Advanced Robotics Techniques</h3>
+                    <p>Join our comprehensive workshop series covering advanced robotics techniques and AI algorithms for aspiring teams.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-                    <article class="news-card" data-category="research">
-                        <div class="news-image">
-                            <div class="news-category">Research</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">March 5, 2024</span>
-                                <span class="news-author">By Research Committee</span>
-                            </div>
-                            <h3 class="news-title">Breakthrough in Service Robot Navigation at Khalifa University</h3>
-                            <p class="news-excerpt">Researchers at Khalifa University develop new AI algorithm for service robot navigation in crowded environments, showing 40% improvement in efficiency.</p>
-                            <div class="news-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Navigation</span>
-                                <span class="tag">Innovation</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                <article class="news-card">
+                    <div class="news-date">February 20, 2024</div>
+                    <h3>RoboCup Junior UAE Champions Announced</h3>
+                    <p>Congratulations to all the young roboticists who participated in RoboCup Junior UAE 2024. Amazing talent showcased!</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-                    <article class="news-card" data-category="partnership">
-                        <div class="news-image">
-                            <div class="news-category">Partnership</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">March 3, 2024</span>
-                                <span class="news-author">By Partnership Team</span>
-                            </div>
-                            <h3 class="news-title">ADNOC Partners with RoboCup UAE for Industrial Robotics Initiative</h3>
-                            <p class="news-excerpt">Strategic partnership aims to develop autonomous systems for oil and gas operations, with focus on safety and efficiency improvements.</p>
-                            <div class="news-tags">
-                                <span class="tag">Industry</span>
-                                <span class="tag">Partnership</span>
-                                <span class="tag">Innovation</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                <article class="news-card">
+                    <div class="news-date">February 15, 2024</div>
+                    <h3>Industry Sponsorship Program Launched</h3>
+                    <p>We're proud to launch our new industry sponsorship program, connecting innovative companies with talented robotics teams.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
 
-                    <article class="news-card" data-category="competition">
-                        <div class="news-image">
-                            <div class="news-category">Competition</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">February 28, 2024</span>
-                                <span class="news-author">By Competition Committee</span>
-                            </div>
-                            <h3 class="news-title">Registration Opens for UAE RoboCup Regional Championship 2024</h3>
-                            <p class="news-excerpt">Teams can now register for the biggest robotics competition in the UAE, scheduled for March 15-17 at Dubai World Trade Centre.</p>
-                            <div class="news-tags">
-                                <span class="tag">Registration</span>
-                                <span class="tag">Championship</span>
-                                <span class="tag">Dubai</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="news-card" data-category="research">
-                        <div class="news-image">
-                            <div class="news-category">Research</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">February 25, 2024</span>
-                                <span class="news-author">By MBZUAI Team</span>
-                            </div>
-                            <h3 class="news-title">MBZUAI Develops Advanced Computer Vision for Rescue Robots</h3>
-                            <p class="news-excerpt">New deep learning model enables rescue robots to better identify victims in disaster scenarios, potentially saving more lives in emergency situations.</p>
-                            <div class="news-tags">
-                                <span class="tag">Computer Vision</span>
-                                <span class="tag">Rescue</span>
-                                <span class="tag">Deep Learning</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="news-card" data-category="education">
-                        <div class="news-image">
-                            <div class="news-category">Education</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">February 22, 2024</span>
-                                <span class="news-author">By Training Committee</span>
-                            </div>
-                            <h3 class="news-title">Teacher Training Program Graduates 100 Robotics Educators</h3>
-                            <p class="news-excerpt">Comprehensive training program equips teachers across the UAE with skills to integrate robotics and AI education into their curricula.</p>
-                            <div class="news-tags">
-                                <span class="tag">Training</span>
-                                <span class="tag">Teachers</span>
-                                <span class="tag">Curriculum</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="news-card" data-category="partnership">
-                        <div class="news-image">
-                            <div class="news-category">Partnership</div>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span class="news-date">February 20, 2024</span>
-                                <span class="news-author">By International Relations</span>
-                            </div>
-                            <h3 class="news-title">UAE Signs MOU with RoboCup Federation for Technology Transfer</h3>
-                            <p class="news-excerpt">Agreement facilitates knowledge sharing and technology transfer between UAE institutions and international RoboCup community.</p>
-                            <div class="news-tags">
-                                <span class="tag">MOU</span>
-                                <span class="tag">International</span>
-                                <span class="tag">Technology</span>
-                            </div>
-                            <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="pagination">
-                    <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i> Previous</button>
-                    <div class="pagination-numbers">
-                        <button class="pagination-number active">1</button>
-                        <button class="pagination-number">2</button>
-                        <button class="pagination-number">3</button>
-                        <span class="pagination-dots">...</span>
-                        <button class="pagination-number">8</button>
-                    </div>
-                    <button class="pagination-btn">Next <i class="fas fa-chevron-right"></i></button>
-                </div>
-
-                <div class="newsletter-signup">
-                    <div class="newsletter-content">
-                        <h2>Stay Informed</h2>
-                        <p>Subscribe to our newsletter to receive the latest news and updates from the UAE robotics community.</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Enter your email address" required>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>RoboCup UAE</h3>
-                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="leagues.html">Leagues</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="news.html">News</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Leagues</h4>
-                <ul>
-                    <li><a href="../leagues/soccer.html">Soccer</a></li>
-                    <li><a href="../leagues/rescue.html">Rescue</a></li>
-                    <li><a href="../leagues/home.html">@Home</a></li>
-                    <li><a href="../leagues/industrial.html">Industrial</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
-                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+                <article class="news-card">
+                    <div class="news-date">February 5, 2024</div>
+                    <h3>AI Ethics in Robotics: New Guidelines</h3>
+                    <p>RoboCup UAE introduces comprehensive guidelines for AI ethics in robotics competitions, ensuring responsible innovation.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                        <span class="logo-text">RoboCup UAE</span>
+                    </div>
+                    <p>Advancing robotics and AI in the UAE through world-class competitions and education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@robocup.ae</li>
+                        <li><i class="fas fa-phone"></i> +971 4 XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

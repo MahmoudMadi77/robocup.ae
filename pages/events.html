@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - RoboCup UAE</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,43 +12,18 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="../index.html">RoboCup UAE</a>
+                <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                <span class="logo-text">RoboCup UAE</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="history.html">History</a>
-                        <a href="objective.html">Objective</a>
-                        <a href="past-events.html">Past Events</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="organization.html" class="nav-link">Organization <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="trustees.html">Trustees</a>
-                        <a href="committees.html">Committees</a>
-                        <a href="regional.html">Regional Partners</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="leagues.html" class="nav-link">Leagues <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="../leagues/soccer.html">RoboCup Soccer</a>
-                        <a href="../leagues/rescue.html">RoboCup Rescue</a>
-                        <a href="../leagues/home.html">RoboCup@Home</a>
-                        <a href="../leagues/industrial.html">RoboCup Industrial</a>
-                        <a href="../leagues/junior.html">RoboCup Junior</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
-                <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="competitions.html" class="nav-link">Competitions</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -56,265 +31,196 @@
         </div>
     </nav>
 
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title">Events</h1>
-                <p class="hero-subtitle">Upcoming competitions, workshops, and conferences in UAE robotics</p>
-            </div>
-        </section>
+    <section class="page-header">
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <p>Join us at these exciting robotics events and competitions</p>
+        </div>
+    </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="events-filter">
-                    <h2>Filter Events</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All Events</button>
-                        <button class="filter-btn" data-filter="competition">Competitions</button>
-                        <button class="filter-btn" data-filter="workshop">Workshops</button>
-                        <button class="filter-btn" data-filter="conference">Conferences</button>
-                        <button class="filter-btn" data-filter="training">Training</button>
+    <section class="events">
+        <div class="container">
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Apr</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>RoboCup UAE 2024 National Championship</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Dubai World Trade Centre, Dubai</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                        <p>The premier robotics competition in the UAE featuring all major leagues including Soccer, @Home, Rescue, and @Work. Teams from across the region will compete for national titles.</p>
+                        <div class="event-tags">
+                            <span class="tag">Competition</span>
+                            <span class="tag">National</span>
+                            <span class="tag">All Leagues</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Register Now</a>
                     </div>
                 </div>
 
-                <div class="events-grid">
-                    <div class="event-card" data-category="competition">
-                        <div class="event-date">
-                            <div class="date-day">15</div>
-                            <div class="date-month">MAR</div>
-                            <div class="date-year">2024</div>
-                        </div>
-                        <div class="event-content">
-                            <div class="event-category">Competition</div>
-                            <h3 class="event-title">UAE RoboCup Regional Championship</h3>
-                            <p class="event-description">The premier robotics competition in the UAE, featuring all RoboCup leagues and serving as qualification for the world championship.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Dubai World Trade Centre
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    9:00 AM - 6:00 PM
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">May</span>
+                        <span class="day">20</span>
                     </div>
-
-                    <div class="event-card" data-category="workshop">
-                        <div class="event-date">
-                            <div class="date-day">22</div>
-                            <div class="date-month">MAR</div>
-                            <div class="date-year">2024</div>
+                    <div class="event-content">
+                        <h3>Robotics Workshop Series</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Various UAE Universities</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                        <p>Comprehensive hands-on workshops covering robotics fundamentals, AI programming, computer vision, and competition strategies for students and educators.</p>
+                        <div class="event-tags">
+                            <span class="tag">Workshop</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Training</span>
                         </div>
-                        <div class="event-content">
-                            <div class="event-category">Workshop</div>
-                            <h3 class="event-title">Introduction to RoboCup Soccer</h3>
-                            <p class="event-description">Hands-on workshop for beginners covering robot design, programming, and strategy for RoboCup Soccer competitions.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Khalifa University, Abu Dhabi
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    10:00 AM - 4:00 PM
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="event-card" data-category="conference">
-                        <div class="event-date">
-                            <div class="date-day">05</div>
-                            <div class="date-month">APR</div>
-                            <div class="date-year">2024</div>
-                        </div>
-                        <div class="event-content">
-                            <div class="event-category">Conference</div>
-                            <h3 class="event-title">UAE Robotics & AI Summit</h3>
-                            <p class="event-description">Annual conference bringing together researchers, industry leaders, and students to discuss the future of robotics and AI in the UAE.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Emirates Palace, Abu Dhabi
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    8:00 AM - 6:00 PM
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="event-card" data-category="training">
-                        <div class="event-date">
-                            <div class="date-day">12</div>
-                            <div class="date-month">APR</div>
-                            <div class="date-year">2024</div>
-                        </div>
-                        <div class="event-content">
-                            <div class="event-category">Training</div>
-                            <h3 class="event-title">RoboCup@Home Training Camp</h3>
-                            <p class="event-description">Intensive 3-day training program for service robotics, covering navigation, manipulation, and human-robot interaction.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    American University of Sharjah
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    9:00 AM - 5:00 PM (3 days)
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="event-card" data-category="competition">
-                        <div class="event-date">
-                            <div class="date-day">20</div>
-                            <div class="date-month">APR</div>
-                            <div class="date-year">2024</div>
-                        </div>
-                        <div class="event-content">
-                            <div class="event-category">Competition</div>
-                            <h3 class="event-title">RoboCup Junior UAE Championship</h3>
-                            <p class="event-description">National championship for young roboticists aged 8-19, featuring Soccer, Rescue, OnStage, and Simulation leagues.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Dubai International Academic City
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    8:00 AM - 7:00 PM
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="event-card" data-category="workshop">
-                        <div class="event-date">
-                            <div class="date-day">28</div>
-                            <div class="date-month">APR</div>
-                            <div class="date-year">2024</div>
-                        </div>
-                        <div class="event-content">
-                            <div class="event-category">Workshop</div>
-                            <h3 class="event-title">Industrial Robotics Workshop</h3>
-                            <p class="event-description">Professional development workshop focusing on industrial automation, collaborative robotics, and Industry 4.0 applications.</p>
-                            <div class="event-details">
-                                <div class="event-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    ADNOC Technical Institute
-                                </div>
-                                <div class="event-time">
-                                    <i class="fas fa-clock"></i>
-                                    9:00 AM - 3:00 PM
-                                </div>
-                            </div>
-                            <div class="event-actions">
-                                <a href="#" class="btn btn-primary">Register Now</a>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
+                        <a href="#" class="btn btn-primary">Join Workshop</a>
                     </div>
                 </div>
 
-                <div class="calendar-section">
-                    <h2>Event Calendar</h2>
-                    <div class="calendar-container">
-                        <div class="calendar-header">
-                            <button class="calendar-nav" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
-                            <h3 id="currentMonth">March 2024</h3>
-                            <button class="calendar-nav" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Jun</span>
+                        <span class="day">10</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>AI & Robotics Innovation Summit</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Abu Dhabi National Exhibition Centre</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 8:00 AM - 7:00 PM</p>
+                        <p>Industry summit bringing together researchers, students, and professionals to discuss the latest trends in AI and robotics innovation in the Middle East.</p>
+                        <div class="event-tags">
+                            <span class="tag">Summit</span>
+                            <span class="tag">Industry</span>
+                            <span class="tag">Innovation</span>
                         </div>
-                        <div class="calendar-grid">
-                            <div class="calendar-day header">Sun</div>
-                            <div class="calendar-day header">Mon</div>
-                            <div class="calendar-day header">Tue</div>
-                            <div class="calendar-day header">Wed</div>
-                            <div class="calendar-day header">Thu</div>
-                            <div class="calendar-day header">Fri</div>
-                            <div class="calendar-day header">Sat</div>
-                            <!-- Calendar days will be populated by JavaScript -->
-                        </div>
+                        <a href="#" class="btn btn-primary">Get Tickets</a>
                     </div>
                 </div>
 
-                <div class="newsletter-signup">
-                    <div class="newsletter-content">
-                        <h2>Stay Updated</h2>
-                        <p>Subscribe to our newsletter to receive updates about upcoming events, competitions, and workshops.</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Enter your email address" required>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Jul</span>
+                        <span class="day">05</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>RoboCup Junior UAE Championship</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Sharjah Research Technology and Innovation Park</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                        <p>Special competition for young roboticists aged 8-19, featuring Soccer, Rescue, and OnStage challenges designed to inspire the next generation.</p>
+                        <div class="event-tags">
+                            <span class="tag">Junior</span>
+                            <span class="tag">Youth</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Register Team</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>RoboCup UAE</h3>
-                <p>Advancing robotics and AI through competition and collaboration in the United Arab Emirates.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Aug</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>International RoboCup Preparation Camp</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> American University of Sharjah</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM (3 days)</p>
+                        <p>Intensive preparation camp for UAE teams qualifying for the international RoboCup competition, featuring expert coaching and advanced training.</p>
+                        <div class="event-tags">
+                            <span class="tag">Training</span>
+                            <span class="tag">International</span>
+                            <span class="tag">Advanced</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="leagues.html">Leagues</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="news.html">News</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Leagues</h4>
-                <ul>
-                    <li><a href="../leagues/soccer.html">Soccer</a></li>
-                    <li><a href="../leagues/rescue.html">Rescue</a></li>
-                    <li><a href="../leagues/home.html">@Home</a></li>
-                    <li><a href="../leagues/industrial.html">Industrial</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> info@robocup.ae</p>
-                <p><i class="fas fa-phone"></i> +971 XX XXX XXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> UAE</p>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">Sep</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Women in Robotics Conference</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Zayed University, Dubai</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                        <p>Special conference celebrating and encouraging women's participation in robotics and AI, featuring inspiring speakers and networking opportunities.</p>
+                        <div class="event-tags">
+                            <span class="tag">Conference</span>
+                            <span class="tag">Women in Tech</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Attend Conference</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+    </section>
+
+    <section class="event-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Calendar</h2>
+                <p>Mark your calendar for these important dates</p>
+            </div>
+            <div class="calendar-grid">
+                <div class="calendar-month">
+                    <h3>April 2024</h3>
+                    <ul>
+                        <li><strong>15th:</strong> RoboCup UAE National Championship</li>
+                        <li><strong>20th:</strong> Registration Deadline for Summer Workshops</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h3>May 2024</h3>
+                    <ul>
+                        <li><strong>20th:</strong> Robotics Workshop Series Begins</li>
+                        <li><strong>25th:</strong> Team Formation Deadline</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h3>June 2024</h3>
+                    <ul>
+                        <li><strong>10th:</strong> AI & Robotics Innovation Summit</li>
+                        <li><strong>30th:</strong> Junior Championship Registration Opens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo.svg" alt="RoboCup UAE" class="logo">
+                        <span class="logo-text">RoboCup UAE</span>
+                    </div>
+                    <p>Advancing robotics and AI in the UAE through world-class competitions and education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@robocup.ae</li>
+                        <li><i class="fas fa-phone"></i> +971 4 XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboCup UAE. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
