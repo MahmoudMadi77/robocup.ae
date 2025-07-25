@@ -1,136 +1,26 @@
-// Smooth scrolling for navigation links
+// RoboCup UAE Website - Enhanced JavaScript
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    const links = document.querySelectorAll('a[href^="#"]');
+    // Initialize all functionality
+    initNavigation();
+    initAnimations();
+    initScrollEffects();
+    initMobileMenu();
+    initFormHandling();
+    initGalleryFilters();
+    initNewsFilters();
+    initFAQ();
+    initCounterAnimation();
+});
 
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Mobile menu toggle (if needed for responsive design)
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-        });
-    }
-
-    // Fade in animation on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    // Add fade-in class to sections and observe them
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.classList.add('fade-in');
-        observer.observe(section);
-    });
-
-    // Active navigation highlighting
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-
-        let current = '';
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-
-            if (window.pageYOffset >= sectionTop && 
-                window.pageYOffset < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
-            }
-        });
-    });
-
-    // Contact form handling
-    const contactForm = document.querySelector('.contact-form form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const subject = this.querySelectorAll('input[type="text"]')[1].value;
-            const message = this.querySelector('textarea').value;
-
-            // Basic validation
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields.');
-                return;
-            }
-
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-
-            // Simulate form submission (replace with actual form handling)
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
-        });
-    }
-
-    // Dropdown menu handling for mobile
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(dropdown => {
-        const dropdownToggle = dropdown.querySelector('a');
-        const dropdownContent = dropdown.querySelector('.dropdown-content');
-
-        if (window.innerWidth <= 768) {
-            dropdownToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                dropdownContent.style.display = 
-                    dropdownContent.style.display === 'block' ? 'none' : 'block';
-            });
-        }
-    });
-
-    // Navbar background change on scroll
+// Navigation functionality
+function initNavigation() {
     const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.nav-link');
 
+    // Add scroll effect to navbar
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 100) {
             navbar.style.background = 'rgba(30, 60, 114, 0.95)';
             navbar.style.backdropFilter = 'blur(10px)';
         } else {
@@ -139,117 +29,369 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Counter animation for statistics
-    const stats = document.querySelectorAll('.stat h3');
-
-    const animateCounter = (element, target) => {
-        let current = 0;
-        const increment = target / 100;
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
-            element.textContent = Math.floor(current) + (target > 50 ? '+' : '');
-        }, 20);
+        });
+    });
+}
+
+// Mobile menu functionality
+function initMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            // Animate hamburger
+            const spans = hamburger.querySelectorAll('span');
+            if (hamburger.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = 'rgba(30, 60, 114, 0.95)';
+                navMenu.style.padding = '1rem';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+                navMenu.style.display = 'none';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                navMenu.style.display = 'none';
+                const spans = hamburger.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+    }
+}
+
+// Animation on scroll
+function initAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
 
-    // Observe stats for counter animation
-    const statsObserver = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const target = parseInt(entry.target.textContent);
-                animateCounter(entry.target, target);
-                statsObserver.unobserve(entry.target);
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0.5 });
+    }, observerOptions);
 
-    stats.forEach(stat => {
-        statsObserver.observe(stat);
+    // Observe elements for animation
+    const animateElements = document.querySelectorAll('.league-card, .news-card, .stat-card');
+    animateElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+}
+
+// Scroll effects
+function initScrollEffects() {
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector('.hero-section');
+
+        if (parallax) {
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+        }
+    });
+}
+
+// Counter animation for statistics
+function initCounterAnimation() {
+    const counters = document.querySelectorAll('.stat-number');
+    const speed = 200;
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
+                const increment = target / speed;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.ceil(current) + '+';
+                    }
+                }, 1);
+
+                observer.unobserve(counter);
+            }
+        });
     });
 
-    // League card hover effects
-    const leagueCards = document.querySelectorAll('.league-card');
+    counters.forEach(counter => observer.observe(counter));
+}
 
-    leagueCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
+// Gallery filtering functionality
+function initGalleryFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                // Filter gallery items with animation
+                galleryItems.forEach(item => {
+                    item.style.transition = 'all 0.3s ease';
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                        item.style.display = 'block';
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
         });
+    }
+}
 
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-
-    // News item click handling
+// News filtering functionality
+function initNewsFilters() {
+    const newsFilters = document.querySelectorAll('.news-filter');
     const newsItems = document.querySelectorAll('.news-item');
 
-    newsItems.forEach(item => {
-        const readMoreLink = item.querySelector('.read-more');
+    if (newsFilters.length > 0) {
+        newsFilters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
 
-        if (readMoreLink) {
-            readMoreLink.addEventListener('click', function(e) {
-                e.preventDefault();
+                // Update active filter
+                newsFilters.forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
 
-                // Simulate opening a news article (replace with actual functionality)
-                const title = item.querySelector('h3').textContent;
-                alert(`Opening article: "${title}"`);
+                // Filter news items
+                newsItems.forEach(item => {
+                    if (category === 'all' || item.classList.contains(category)) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.5s ease';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
             });
-        }
-    });
-
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-
-            hero.style.transform = `translateY(${parallax}px)`;
         });
     }
+}
 
-    // Loading animation
-    window.addEventListener('load', function() {
-        document.body.classList.add('loaded');
-    });
+// FAQ functionality
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    // Responsive navigation for mobile
-    function createMobileMenu() {
-        if (window.innerWidth <= 768 && !document.querySelector('.mobile-menu-toggle')) {
-            const navContainer = document.querySelector('.nav-container');
-            const mobileToggle = document.createElement('button');
-            mobileToggle.className = 'mobile-menu-toggle';
-            mobileToggle.innerHTML = '☰';
-            mobileToggle.style.cssText = `
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.5rem;
-                cursor: pointer;
-                display: none;
-            `;
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const icon = question.querySelector('i');
 
-            navContainer.appendChild(mobileToggle);
+        if (question && answer) {
+            question.addEventListener('click', function() {
+                const isOpen = answer.style.display === 'block';
 
-            mobileToggle.addEventListener('click', function() {
-                const navMenu = document.querySelector('.nav-menu');
-                navMenu.classList.toggle('mobile-active');
+                // Close all FAQ items
+                faqItems.forEach(faq => {
+                    const faqAnswer = faq.querySelector('.faq-answer');
+                    const faqIcon = faq.querySelector('.faq-question i');
+                    if (faqAnswer) faqAnswer.style.display = 'none';
+                    if (faqIcon) faqIcon.style.transform = 'rotate(0deg)';
+                });
+
+                // Open clicked item if it was closed
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                }
             });
+        }
+    });
+}
+
+// Form handling
+function initFormHandling() {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Basic form validation
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#f44336';
+                    field.style.boxShadow = '0 0 5px rgba(244, 67, 54, 0.3)';
+                } else {
+                    field.style.borderColor = '#4caf50';
+                    field.style.boxShadow = '0 0 5px rgba(76, 175, 80, 0.3)';
+                }
+            });
+
+            if (isValid) {
+                // Show success message
+                showNotification('Thank you for your message! We will get back to you soon.', 'success');
+                form.reset();
+
+                // Reset field styles
+                requiredFields.forEach(field => {
+                    field.style.borderColor = '';
+                    field.style.boxShadow = '';
+                });
+            } else {
+                showNotification('Please fill in all required fields.', 'error');
+            }
+        });
+    });
+}
+
+// Notification system
+function showNotification(message, type = 'info') {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.notification');
+    existingNotifications.forEach(notification => notification.remove());
+
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <span class="notification-message">${message}</span>
+            <button class="notification-close">&times;</button>
+        </div>
+    `;
+
+    // Add styles
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'success' ? '#4caf50' : type === 'error' ? '#f44336' : '#2196f3'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 10000;
+        animation: slideInRight 0.3s ease;
+        max-width: 400px;
+    `;
+
+    // Add to page
+    document.body.appendChild(notification);
+
+    // Close functionality
+    const closeBtn = notification.querySelector('.notification-close');
+    closeBtn.addEventListener('click', () => notification.remove());
+
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (notification.parentNode) {
+            notification.style.animation = 'slideOutRight 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+        }
+    }, 5000);
+}
+
+// Add CSS animations for notifications
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
         }
     }
 
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        createMobileMenu();
-    });
+    @keyframes slideOutRight {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
 
-    // Initialize mobile menu
-    createMobileMenu();
-});
+    .notification-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .notification-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification-close:hover {
+        opacity: 0.7;
+    }
+`;
+document.head.appendChild(style);
 
 // Utility functions
 function debounce(func, wait) {
@@ -264,23 +406,70 @@ function debounce(func, wait) {
     };
 }
 
-// Smooth reveal animation for elements
-function revealOnScroll() {
-    const reveals = document.querySelectorAll('.fade-in');
-
-    reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('visible');
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
         }
-    });
+    }
 }
 
-// Throttled scroll event
-window.addEventListener('scroll', debounce(revealOnScroll, 10));
+// Add smooth reveal animation for page load
+window.addEventListener('load', function() {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s ease';
 
-// Initialize reveal on load
-document.addEventListener('DOMContentLoaded', revealOnScroll);
+    setTimeout(() => {
+        document.body.style.opacity = '1';
+    }, 100);
+});
+
+// Add loading indicator
+function showLoading() {
+    const loader = document.createElement('div');
+    loader.id = 'page-loader';
+    loader.innerHTML = `
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    `;
+
+    loader.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    `;
+
+    document.body.appendChild(loader);
+
+    return loader;
+}
+
+function hideLoading() {
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+        loader.remove();
+    }
+}
+
+// Export functions for use in other scripts
+window.RoboCupUAE = {
+    showNotification,
+    showLoading,
+    hideLoading,
+    debounce,
+    throttle
+};
